@@ -1,0 +1,18 @@
+.js-lazy-area-client .area-partners{
+	width: 100%;
+	height: 275px;
+
+	margin-top: -20px;
+
+}
+.js-lazy-area-client .layout{
+	width: 1240px;
+	height: 275px;
+	background-color: white;
+
+}
+.js-lazy-area-client .layout .bd{
+	width: 1240px;
+	height: 245px;
+
+    }

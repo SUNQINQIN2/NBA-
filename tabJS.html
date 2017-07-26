@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>季后赛对阵</title>
+</head>
+<script src="jquery-3.1.1.js" ></script>
+<style type="text/css">
+.conCarousel{
+	width: 500px;
+	height: 200px;
+    border: 2px solid black;
+}
+.selected{
+	color: red;
+	 border-bottom: 2px solid red; 
+
+}
+.hide{display:none;}
+}
+ 
+</style>
+<script>
+/*注意节点跟jquery获取节点方法的不同
+*/
+/*		
+	      $(document).ready(function(){
+	      	var spanCa=$(".carousel-indicators span");
+            spanCa[i].onmouseover=function(){
+	           	  $(this).addClass("selected").siblings().removeClass("selected");  	 
+          var index=$(this).index();
+           $(".conCarousel_box div").eq(index).show().siblings().hide();
+        }}
+    })*/
+            
+ $(document).ready(function(){
+	      	var spanCa=$(".carousel-indicators span");/*4*/     
+            spanCa.mouseover(function(){
+	           	  $(this).addClass("selected").siblings().removeClass("selected");  	 
+          var index=$(this).index();
+           $(".conCarousel_box div").eq(index).show().siblings().hide();
+        })
+    })
+          
+              
+	      
+		</script>
+<body>
+
+	<div class="carousel-indicators" id="sb-block2-olT" style=" top:0px;margin-left:140px;width: 280px;height: 32px;height: 30px; border-bottom: 2px solid #006bb7;font-size: 0; position: relative;">  
+		   <span class="slide-one1 selected" style="display:inline-block; float: left;width: 70px;height: 100%;font-size: 16px;">
+		       第一轮
+		   </span>
+		   <span class="slide-two1" style="display: inline-block; float: left;width:  70px;height: 100%;font-size: 16px;">
+		    半决赛
+		   </span>
+		    <span class="slide-three1" style="display: inline-block; float: left;width:  70px;height: 100%;font-size: 16px;">
+		    决赛
+		   </span>
+		    <span class="slide-four1" style="display: inline-block; float: left;width:  70px;height: 100%;font-size: 16px;">
+		    总决
+		   </span>
+		</div>
+		<div  class="conCarousel_box">
+	           <div class="conCarousel" style="background-color: yellow">
+			  </div>
+			<div class="conCarousel hide" style="background-color:red; " >
+			</div>
+			<div class="conCarousel hide " style="background-color: blue;">
+			</div>
+			<div class="conCarousel hide" style="background-color: pink;">
+			</div>
+	  
+		</div>
+		
+		
+        
+</body>
+</html>
+
+
+<!-- 方法二： -->
+<!--
+
+
+ .tab_menu .selected{background-color:#aaa;}
+           .tab_menu ul{height:30px;}
+           .tab_menu ul li{float:left;list-style:none;width:50px;height:30px;color:#000;border:solid 1px gray;border-bottom:none; text-align:center;line-height:30px;margin-right:3px;}
+           .tab_menu ul li a{text-decoration:none;}
+           .tab_box{width:170px;height:150px;border:solid 1px gray;}
+           .tab_box .hide{display:none;}
+}
+
+
+eq() 方法将匹配元素集缩减值指定 index 上的一个。*/
+       /* $(document).ready(function(){
+        	var aLi=$(".tab_menu ul li");
+                aLi.mouseover(function(){
+                    $(this).addClass('selected').siblings().removeClass('selected');
+                    var index=$(this).index();
+                    alert(index);
+                    $('.tab_box div').eq(index).show().siblings().hide();
+                });
+        })
+
+
+
+-------------------------------------------------方法三
+ <div id="tab">
+            <div class="tab_menu">
+                <ul>
+                    <li class="selected"><a href="#">时事</a></li>
+                    <li><a href="#">体育</a></li>
+                    <li><a href="#">娱乐</a></li>
+                </ul>
+            </div>
+            <div class="tab_box">
+                <div>时事</div>
+                <div class="hide">体育</div>
+                <div class="hide">娱乐</div>
+            </div>
+        </div> -->
+
+
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <style>
+      #tabNam{
+    font-size: 30px;
+      }
+      #tabNam>span{
+    margin:60px;
+    cursor: pointer;
+      }
+      #panel{
+    position: relative;
+      }
+      #a{
+    color: green;
+      }
+      #panel>div{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    color: white;
+      }
+      #A{
+    background-color: red;
+      }
+      #B{
+    background-color: blue;
+    display: none;
+      }
+      </style>
+      <script>
+    function $(id){
+      return document.getElementById(id);
+    }
+    window.onload = function(){
+      $("b").onmouseover = function(){
+        $("A").style.display = "none";
+        $("B").style.display = "block";
+        $("a").style.color = "black";
+        $("b").style.color = "green";
+      }
+      $("a").onmouseover = function(){
+        $("B").style.display = "none";
+        $("A").style.display = "block";
+        $("b").style.color = "black";
+        $("a").style.color = "green";
+      }
+    }
+      </script>
+    </head>
+    <body>
+      <div id="tabNam"><span id="a">a</span><span id="b">b</span></div>
+      <div id="panel">
+    <div id="A">A(red)</div>
+    <div id="B">B(blue)</div>
+      </div>
+    </body>
+    </html>
+     -->

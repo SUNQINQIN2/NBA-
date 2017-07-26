@@ -1,0 +1,105 @@
+.area-experts{
+	width: 100%;
+	height: 301px;
+    background-color: white;
+}
+.area-experts .layout{
+  width: 1240px;
+  height: 301px;
+  background-color: white;
+  margin: 0px auto;
+}
+.area-experts .layout .block-title{
+	width: 1240px;
+	height: 56px;
+	background-color: white;
+	border-bottom: 2px solid blue;
+}
+.area-experts .layout .block-body{
+	width: 1240px;
+	height: 215px;
+	background-color: white;
+	margin-top:30px;
+}
+
+.zhuanjia{
+	padding: 0 0 15px 25px;
+}
+.area-experts .block-body .zhuanjia {
+    float: left;
+    padding: 0 0 15px 25px;
+    margin-left: 25px;
+    width: 275px;
+    border-left: 1px dashed #DDD;
+    height: 215px;
+    background-color: white;
+}
+.area-experts .layout .block-body .zhuanjia-large{
+	width: 340px;
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+    background-color: white;
+}
+.area-experts .block-body .zhuanjia .name .underline {
+    display: block;
+    font-size: 0;
+    border-left: 20px solid #d33556;
+    height: 2px;
+    margin: 14px 0;
+}
+.area-experts .block-body .zhuanjia .name h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0px;
+    margin-top:4px;
+    color: black;
+}
+.area-experts .block-body .zhuanjia .name .more {
+    display: block;
+    float: right;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #7A7F82;
+    line-height: 1;
+    padding-right: 16px;
+   
+}
+
+.area-experts .layout .block-body .zhuanjia-large .photo{
+	width: 125px;
+	height: 180px;
+	margin-right: 16px;
+	background-color: yellow;
+	float: left;
+
+}
+
+.area-experts .block-body .zhuanjia .name{
+	overflow: hidden;
+}
+.area-experts .block-body .zhuanjia .title {
+    overflow: hidden;
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 48px;
+    line-height: 24px;
+
+}
+.area-experts .block-body .zhuanjia .title >a{
+	color: black;
+}
+.area-experts .block-body .zhuanjia .desc {
+    font-size: 12px;
+    color: #717171;
+    line-height: 20px;
+    text-indent: 1em;
+}
+.area-experts .block-body .zhuanjia .photo {
+    font-size: 0;
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin-right: 16px;
+}

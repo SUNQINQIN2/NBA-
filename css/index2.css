@@ -1,0 +1,248 @@
+
+.header a{
+		text-decoration: none;
+		color: white;
+		font-size: 15px;
+	} 
+*{
+	margin: 0px;
+  padding: 0px;
+}
+	/* body{
+	  
+	  background-image: url("images/body1.jpg");
+	background-size: cover;
+	} */
+	.nba-container-wrapper{
+		background-color: #EAEAEA;
+		width: 100%;
+		height:3909px;
+	}
+	.header{
+		width: 100%;
+		height: 170px;
+		background-color: #1a477b;
+	}
+	.wrap{
+		width: 1000px;
+		margin: 0px auto;
+	}
+	.header-main{
+		
+		width: 1000px;
+		height: 120px;
+		z-index: 3000;
+		margin: 0px auto;
+        background-color: #1a477b;
+    
+	}
+	.header-logo{
+		margin-top: 19px;
+		width: 36px;
+		height: 81px;	
+		float: left;	
+	}
+	.header-wrap{
+     width: 575px;
+     height: 117px;
+     background-color: #1a477b;
+     float: left;
+	}
+	.wrap-up{
+		height:16px;
+       margin-top:31px;
+   
+	}
+	.wrap-down{
+      height: 35px;
+      margin-top: 18px;
+     /*  background-color: red; */
+	}
+	.wrap-up-ul1 li{
+		text-align: center;
+		height: 30px;
+		width: 70px;
+		line-height: 30px;
+		margin-right: 13px;
+		float: left;
+		/* background-color: red;	 */
+		list-style: none;
+	} 
+	.wrap-up-ul1 li ul li{
+		text-align: center;
+		height: 40px;
+		width: 70px;
+		line-height: 40px;
+			
+		list-style: none;
+		border:1px solid #C6C3C3;
+		background-color: #6292C2;
+	display: none;
+	/* position: relative;
+	z-index: 2; */
+	
+	}
+
+	#last_li ul li:hover{
+		background-color: #1a477b;
+	}
+	
+	.wrap-down a{
+		height: 35px;
+		color: #bdc3cd;
+		font-size: 18px;
+		float: left;
+		line-height: 35px;
+		/* border-left:2px solid red;
+		text-align: center; */
+		margin-left: 10px;
+	}
+	#a_l{
+      width: 2px;
+      height: 30px;
+      background-color: black;
+      display: inline-block;
+      float: left;
+	}
+	.wrap-down a:hover{
+		text-decoration: underline;
+	}
+	.header-side{
+		height: 117px;
+		width: 215px;
+		background-color: #1a477b;
+		float: right;
+
+	}
+	.side-user{
+		width: 215px;
+		height: 18px;
+		
+		margin-top: 23px;
+		font-size: 12px;
+
+	}
+	.side-user a{
+        margin-left: 183px;
+	}
+	.side-user a:hover{
+		text-decoration: underline;
+	}
+	.side-search{
+		width: 215px;
+		height: 30px;
+		margin-top: 32px;
+		border: 1px solid #1a477b;
+		border-radius: 30px;
+
+	}
+	
+	.side-search span{
+	    float: left; 
+	}
+	.side-search img{
+		height: 33.5px;
+		width: 30px;
+		border-bottom-right-radius: 30px;
+		border-top-right-radius: 30px;
+	}
+	.side-search input{
+		display: inline-block;
+		width: 170px;
+		height: 30px;
+		border-bottom-left-radius: 30px;
+		border-top-left-radius: 30px;
+	}
+	.header-nav{
+		margin: 0px auto;
+		border: 1px solid #1a477b;
+		
+		width: 1000px;
+		height: 48px;
+
+	}
+	.header-nav-ul ul{
+		
+   margin-top: 0px;
+	}
+	.header-nav-ul li{
+		list-style: none;
+		display: block;
+		width:76px;
+		height: 48px; 
+	 	background-color: #1e518c;
+		text-align: center;
+		line-height: 48px;
+		float: left;
+
+	}
+	.header-nav-ul li a{
+		font-size: 17px;
+	}
+	/* header-nav-ul部分的li css代码 */
+ #li-ul-bteam li,#li-ul-bplayer li,#li-ul-bgame li,#li-ul-branking li,#li-ul-bwork li,#li-ul-bmore li{
+    height:48px;
+    width: 95px;   
+    list-style: none;
+    display: none;
+  padding-left: 20px;
+  text-align: left;
+	line-height: 48px;
+	float: left;
+	color: white;
+	background-color: #1a477b;
+	border: 1px solid #A2A3A6;
+ }
+ #li-ul-bteam li,#li-ul-bplayer li,#li-ul-bgame li,#li-ul-branking li,#li-ul-bwork li,#li-ul-bmore li{
+ 	background-color: #6292C2;
+ }
+ #li-ul-bteam ul li:hover,#li-ul-bteam ul li:hover,#li-ul-bplayer ul li:hover,#li-ul-bgame ul li:hover,#li-ul-branking ul li:hover,#li-ul-bwork ul li:hover,#li-ul-bmore ul li:hover{
+	background-color: #1a477b;
+} 
+
+ #li-ul-bmore ul li{
+  float: right;
+ }
+ /* main-content */
+.main-content-box{
+	width: 100%;
+	height: 3754px;
+	background-color: #E8E7E7;
+	margin: 0px auto;
+}
+.main-content{
+	width: 100%;
+	height: 3339px;
+	background-color: yellow;
+	padding: 15px 10px 0;	
+}
+.footer{
+	width: 100%;
+	height: 415px;
+	background-color: #999090;
+}
+.main{
+	width: 1220px;
+	height: 3324px;
+	background-color: red;
+	position: relative;
+	margin: 0px auto;
+}
+.sched{
+	width: 1200px;
+	height: 141px;
+	margin: 0px auto;
+	background-color: green;
+}
+.site-banner{
+	width: 1200px;
+	height: 150px;
+	background-color: white;
+	margin-top: 15px;
+}
+.section{
+	width: 1200px;
+	height: 330px;
+	background-color: green;
+	margin-top: 15px;
+}

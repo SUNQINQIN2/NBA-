@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>折叠JS</title>
+</head>
+<script src="jquery-3.1.1.js" ></script>
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+}
+p{
+	text-align: center;
+	cursor: pointer;
+}
+#zd{
+	width: 500px;
+	height: 500px;
+	background-color: pink;
+}
+
+.zdc{
+   width: 500px;
+   height: 200px;
+   background-color: yellow;
+   margin-top:0px;
+}
+</style>
+<script>
+$(document).ready(function(){
+	var pc=$("#zd p");
+	alert(pc.length);
+	pc.mouseover(function(){
+		/*$(this).next("div").slideToggle();*/
+		/*$(this).next("div").slideToggle();*/
+		/*alert($(this).siblings("div").length);*/
+		 var index=$(this).index("p");
+           $("#zd div").eq(index).slideDown().siblings("#zd div").slideUp();
+	})
+})
+/**/
+</script>
+
+<body>
+	<div id="zd">
+	    <p>点击</p>
+	    <div class="zdc" id="p1c"></div>
+	    <p>点击</p>
+	    <div class="zdc" id="p2c"></div>
+	    <p>点击</p>
+	    <div class="zdc" id="p3c"></div>
+	</div>
+</body>
+</html>

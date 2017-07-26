@@ -1,0 +1,10 @@
+.ad-banner{
+	width: 1240px;
+margin: -12px auto 12px;
+max-height: 150px;
+position: relative;
+font-size: 0;
+background-color: #F3F3F3;
+overflow: hidden;
+background-color: red;
+}

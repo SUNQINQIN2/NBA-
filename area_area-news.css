@@ -1,0 +1,386 @@
+
+.area-news{
+	width: 100%;
+	height: 1091px;
+	/* background-color: yellow; */
+}
+.area-cf{
+	width: 1240px;
+	height: 1091px;
+	background-color: white;
+    margin:0px auto;
+}
+.area-news .col-left #ul-left-top li, .area-news .col-left #ul-left-down li{
+   text-align: left;
+}
+.area-news .col-left #ul-left-top li{
+	white-space: nowrap;
+    word-break: keep-all;
+}
+.area-news .col-left #ul-left-top  li .icon_v{
+	background-image: url("images/header/视频.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+  padding-left: 24px;
+}
+.area-news .col-left #ul-left-top  li>a {
+	font-size: 16px;
+	font-weight: 600;
+	color: #081626;
+	line-height: 40px;
+}
+.col-left{
+	width: 410px;
+	height: 1048px;
+	/* background-color: #EADDC7; */
+	margin-right: 10px;
+	float: left;
+}
+
+.col-left>#ul-left-top {
+ 	 width: 410px;
+ 	 height: 621px;
+ 	/*  background-color: yellow; */
+
+ }
+ .col-left>#ul-left-top  li{
+ 	height: 29px;
+ 	width: 100%;
+ 	line-height: 30px;
+ }
+.col-left #ul-left-top  li .tag-red{	
+color: white;
+background-color: red;
+line-height: 20px;
+
+}
+.col-left #ul-left-top  li .tag-blue{	
+color: white;
+background-color: #258ee7;
+line-height: 20px;
+text-align: center;
+}
+
+
+
+/* ul-left-down部分
+ */
+.col-left #ul-left-down{
+	width: 410px;
+	height: 351px;
+	background-color: white;
+	margin-top:30px;
+}
+ .col-left #ul-left-down  li .bold {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f2744;
+    line-height: 40px;
+}
+ .col-left #ul-left-down  li .tag-red{	
+color: white;
+background-color: red;
+line-height: 20px;
+text-align: center;
+}
+.col-left #ul-left-down  li .tag-blue{	
+color: white;
+background-color: #258ee7;
+line-height: 20px;
+text-align: center;
+}
+
+.area-news .col-left #ul-left-down li{
+	white-space: nowrap;
+    word-break: keep-all;
+}
+.area-news .col-left #ul-left-down  li>a {
+	font-size: 16px;
+	font-weight: 600;
+	color: #081626;
+	line-height: 40px;
+}
+.area-news .col-left #ul-left-down li .icon_v{
+	background-image: url("images/header/视频.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+  padding-left: 24px;
+}
+ .col-left>#ul-left-down  li{
+ 	height: 30px;
+ 	width: 100%;
+ 	line-height: 30px;
+ }
+
+
+/* 中间部分 */
+ .middle{
+	width: 520px;
+	height: 1091px;
+	background-color: #EADDC7;
+	float: left;
+    position: relative;
+}
+.middle .mod-ssjx{
+	width: 100%;
+	height: 863px;
+	
+}
+.middle .hd{
+	width: 500px;
+	height: 30px;
+	background-color: yellow;
+	margin: 0 10px 8px;
+}
+
+
+
+/* 右边部分 */
+ .col-right{
+	width: 280px;
+	height: 1075px;
+	background-color: pink;
+	margin-left: 20px;
+	float: left;
+
+}
+.sb-block{
+	width: 280px;
+	height: 225px;
+	margin-bottom: 20px;
+	background-color: white;
+	
+}
+#sb-block-news-list>a{
+	color: black;
+}
+.sb-block>#sb-block-news-list :hover{
+   text-decoration: none;
+   color: #798EDF;
+
+}
+/* 季后赛 */
+
+.sb-block2{
+	width: 280px;
+	height: 620px;
+	margin-bottom: 20px;
+	background-color: #DCD7D7;
+}
+.sb-block2>.sb-block2-content>div >ul>li.selected{
+	color: red;
+
+	 border-bottom: 2px solid red; 
+
+}
+.sb-block2 .conCarousel_box>.hide2
+{
+	display:none;
+}
+
+
+/* 最右侧tab部分 */
+
+/* .round1-list */
+
+.conCarousel_box .round1-list{
+	width: 140px;
+	height: 100%;
+	float: left;
+}
+.conCarousel_box .round1-list>li{
+	width: 140px;
+	height: 120px;
+	border-right: 1px solid white;
+	
+	
+}
+.conCarousel_box .round1-list>li>.team{
+	display: block;
+    height: 46px;
+    width: 120px;
+    padding: 7px 0;
+
+}
+
+.conCarousel_box .round1-list>li img{
+  float: left;
+}
+.conCarousel_box .round1-list>li div{
+	float: left;
+    margin-left: 6px;
+}
+
+.conCarousel_box .round1-list>li div h4{
+  color: #081626;
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+.conCarousel_box .round1-list>li div span{
+  font-size: 12px;
+    color: #7b8082
+}
+.conCarousel_box .round1-list>li p{
+  float: right;
+  font-size: 18px;
+    font-weight: 700;
+    color: #081626;
+    margin-top: 14px;
+}
+.conCarousel_box .round1-list>li>.team2{
+  margin-left: 15px;
+} 
+
+/* .round2-list */
+.conCarousel_box .round2-list>li{
+	width:280px;
+	height: 135px;
+	background-color: white;
+	border-bottom: 1px solid #AAAAAA;
+}
+.conCarousel_box .round2-list>li img{
+	width: 75px;
+	height: 75px;
+	background-color: red;
+    float: left;
+}
+.conCarousel_box .round2-list>li>.team{
+	float: left;
+	padding: 0px 24px;
+	margin-top:20px;    /* display: block; */
+    float: left;
+    padding: 0 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+.conCarousel_box .round2-list>li>.team >div span{
+	color: #7b8082;
+}
+.conCarousel_box .round2-list>li .goal{
+  float: left;
+    width: 25px;
+    height: 134px;
+    line-height: 134px;
+    font-size: 18px;
+    text-align: center;
+    color: #081626;
+    font-weight: 700;
+}
+
+/* .round3-list */
+.conCarousel_box .round3-list >li{
+   width: 280px;
+   height: 270px;
+  border-bottom: 1px solid #AAAAAA;
+  border: 1px solid #C9C5C5;
+}
+.conCarousel_box .round3-list >li >div{
+	float: left;
+}
+.conCarousel_box .round3-list>li .team{
+	
+	float: left;
+	padding: 0px 24px;
+	margin-top:20px;    /* display: block; */
+    float: left;
+    padding: 0 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.conCarousel_box .round3-list .team img{
+	width: 75px;
+	height: 75px;
+	background-color: yellow;
+    float: left;
+}
+.conCarousel_box .round3-list .team span{
+	color: #7b8082;
+}
+.conCarousel_box .round3-list>li .goal{
+  float: left;
+    width: 25px;
+    height: 134px;
+    line-height: 134px;
+    font-size: 18px;
+    text-align: center;
+    color: #081626;
+    font-weight: 700;
+}
+
+
+/* round4-list */
+.conCarousel_box .round4-list .team img{
+	width: 75px;
+	height: 75px;
+	background-color: red;
+    float: left;
+}
+.conCarousel_box .round4-list .team{
+	float: left;
+	padding: 0px 24px;
+	margin-top:20px;   
+    float: left;
+    padding: 0 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+.conCarousel_box .round4-list .team  span{
+	color: #7b8082;
+}
+.conCarousel_box .round4-list .goal{
+  float: left;
+    width: 25px;
+    height: 134px;
+    line-height: 134px;
+    font-size: 18px;
+    text-align: center;
+    color: #081626;
+    font-weight: 700;
+} 
+.conCarousel_box .round4-list{
+	float: left;
+}
+.conCarousel_box ol>.ol_li{
+	list-style: none;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  vertical-align:middle;
+
+}
+
+
+.conCarousel_box ol>.ol_li>a:hover span{
+	color: #417BA1;
+	text-orientation: none;
+}
+.conCarousel_box ol>.ol_li>a>.ol_li-span{
+	color: black;
+}
+.conCarousel_box ol>.ol_li>a>.ol_li-span1{
+    margin-right: 15px;
+}
+.conCarousel_box ol>.ol_li>a>.ol_li-span2{
+       
+       margin-left: 50px;
+}
+.conCarousel_box ol>.div-li-co{
+	width: 100%;
+	height: 195px;
+	background-color: #F2F2F2;
+}
+.conCarousel_box ol>.div-li-co>h4{
+   font-size:15px;
+   font-weight: 700;
+}
+.conCarousel_box ol>.div-li-co>p{
+	color: black;
+}
+.conCarousel_box ol>.div-li-co>div{
+	margin-top: 0px;
+	width: 100%;
+	height: 20px;
+	background-color: red;
+}

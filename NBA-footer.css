@@ -1,0 +1,96 @@
+.nba-footer{
+	width: 100%;
+	height: 498px;
+
+	margin-top: 5px;
+}
+.nba-footer {
+    border-top: 3px solid #d43456;
+    background-color: #005897;
+    font-family: "\5FAE\8F6F\96C5\9ED1",sans-serif;
+    min-width: 1000px;
+}
+.nba-footer {
+    position: relative;
+    z-index: 2;
+}
+.nba-footer .nba-footer-links {
+    height: 64px;
+    line-height: 64px;
+    border-bottom: 1px solid #00487a;
+}
+.nba-footer-layout {
+    width: 100%;
+}
+.nba-footer .nba-footer-layout {
+    margin: 0 auto;
+}
+.nba-footer-wide .nba-footer-links ul {
+    left: -25px;
+}
+.nba-footer .nba-footer-links >ul {
+    display: block;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+}
+.nba-footer ol, .nba-footer ul {
+    list-style: none;
+}
+.nba-footer .nba-footer-links .nba-footer-layout >ul >li{
+	width: 82px;
+	height: 64px;
+}
+.nba-footer .nba-footer-links .nba-footer-layout >ul >li a{
+	color: #4657EB;
+	font-size: 16px;
+	font-weight: 600;
+}
+.nba-footer .nba-footer-links .nba-footer-layout ul >li a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+
+/* nba-footer-main */
+.nba-footer .nba-footer-links .nba-footer-main {
+    margin-top: 40px;
+}
+
+/* .nba-footer .nba-footer-links .nba-footer-main .nba-footer-layout {
+    width: 1240px;
+} */
+.nba-footer  .nba-footer-main .nba-footer-layout .nba-links {
+    margin-top: 30px;
+     margin-left:20px;
+	/* width: 1240px; */
+  width: 100%;
+}
+.nba-footer .nba-footer-main  .nba-footer-layout ul.nba-links  >li{
+
+  width: 165px;
+  height: auto;
+
+  display: block;
+  float: left;
+}
+.nba-footer  .nba-footer-main .nba-footer-layout .nba-links > li h4{
+    text-align: left;
+	font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 10px;
+   color: white;
+}
+/* nba-links 里面的links */
+.nba-footer  .nba-footer-main .nba-footer-layout .nba-links li .nba-links2 > li {
+    text-align: left;
+    width: 165px;
+    
+    line-height: 20px;
+    display: block;
+}
+.nba-footer  .nba-footer-main .nba-footer-layout .nba-links li .nba-links2 > li >a:hover{
+  color: white;
+  text-decoration: none;
+}

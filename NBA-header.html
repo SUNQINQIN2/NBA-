@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NBA</title>
+ <link href="video-js/video-js.css" rel="stylesheet" type="text/css">
+  <!-- video.js must be in the <head> for older IEs to work. -->
+  <script src="video-js/video.js"></script>
+  <script>
+    videojs.options.flash.swf = "video-js/video-js.swf";
+  </script>
+</head>
+<style type="text/css">
+	body{
+	   width: 100%;
+	   height: 8693px;
+	   background-color: #DFDFDF;
+	}
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.area{
+		margin-bottom: 20px;
+	}
+    ul li{
+        
+        float: left;
+        list-style: none;
+        display: inline-block;   
+        text-align: center;
+        
+    }
+    ul a{  
+        text-decoration: none;
+    }
+.nba-header-layout-left ul li a,.nba-header-layout-right ul li a{
+     color: white;
+        font-size: 17px; 
+}
+</style>
+ <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="public-nav.css">
+<link rel="stylesheet" href="area-schedule-lite.css">
+<link rel="stylesheet" href="area_area-focus.css">
+<link rel="stylesheet" href="ad-banner.css">
+<link rel="stylesheet" href="area_area-news.css">
+<link rel="stylesheet" href="ID_AD_Banner5.css">
+<link rel="stylesheet" href="js-lazy-area_ele-video.css">
+<link rel="stylesheet" href="area_area-experts.css">
+<link rel="stylesheet" href="js-lazy-area-deep.css">
+<link rel="stylesheet" href="js-lazy-area_ele-player.css">
+<link rel="stylesheet" href="js-lazy-area_ele-star.css">
+<link rel="stylesheet" href="js-lazy-area_ele-team.css">
+<link rel="stylesheet" href="js-lazy-area_ele-shequ.css">
+<link rel="stylesheet" href="js-lazy-area_photo.css">
+<link rel="stylesheet" href="ad-type-a.css">
+<link rel="stylesheet" href="area-partners.css">
+<link rel="stylesheet" href="js-lazy-area-client.css">
+<link rel="stylesheet" href="NBA-footer.css">
+
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="jquery-3.1.1.js" ></script>
+<script type="text/javascript" src="js/js-lazy-area_ele-player.js"></script>
+
+<script type="text/javascript" src="js/area_area-focus.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+          var spanCa=$(".sb-block2 ul .tab_li");/*4*/     
+         
+            spanCa.mouseover(function(){
+                $(this).addClass("selected").siblings().removeClass("selected");     
+              var index=$(this).index();
+             
+               $(".conCarousel_box .divc").eq(index).show().siblings().hide();
+        })
+    })
+   
+$(document).ready(function(){
+  var ol_li=$(".round4-list-zd .ol_li");
+  
+  ol_li.mouseover(function(){
+     var index=$(this).index(".ol_li");
+
+           $(".conCarousel_box .div-li-co").eq(index).slideDown().siblings(".div-li-co").slideUp();
+  })
+})
+    function show(e){
+        
+      var s=e.getElementsByTagName('UL')[0];
+          var s2=s.getElementsByTagName("LI");
+          for(var i=0;i<s2.length;i++){
+            
+            s2[i].style.display="block";
+          } 
+       
+    }
+     function Out(e) {
+        var s=e.getElementsByTagName('UL')[0];
+          var s2=s.getElementsByTagName("LI");
+          for(var i=0;i<s2.length;i++){
+            s2[i].style.display="none";
+          }
+          
+    }
+     
+
+
+</script>
+<body>
+	<!-- 公共导航栏 -->
+	<div class="public-nav">
+		<div class="nba-header-top">
+			<div class="nba-header-layout">
+               <a href="#" style="float:left"><img src="images/header/header1.png"></a>
+               <div class="a">
+                   <a href="#" >腾讯网</a>
+                   <a href="#" >腾讯体育</a>
+                   <div class="a-l"></div>
+                   <a href="#" >NBA中文网</a>
+               </div>
+               <a href="#" style="float:left;margin-left:200px"><img src="images/header/header2.png"></a>
+               <div  class="b">
+                <a href="#"><img src="images/header/header3.png"></a>
+            </div>
+            </div>   
+        </div>
+		<div class="nba-header-nav">
+			<div class="nba-header-layout">
+                   <div class="nba-header-layout-left">
+                       <ul>
+                           <li style="width: 78.5px;height:45px;line-height:45px;">
+                            <a href="#">首页</a></li>
+                           <li style="width: 78.5px;height:45px;line-height:45px;">
+                            <a href="#">视频</a></li>
+                           <li style="width: 78.5px;height:45px;line-height:45px;">
+                            <a href="#">直播</a></li>
+                           <li style="width: 78.5px;height:45px;line-height:45px;">
+                           <a href="#">图片</a></li>
+                       </ul>
+                   </div>
+                   <div class="split"></div>
+                   <div class="nba-header-layout-right">
+                       <ul>
+                           <li><a href="#">新闻</a></li>
+                           
+                           <li><a href="#">球员</a></li>
+                           
+                           <li><a href="#">球队</a></li>
+                           
+                           <li> <a href="#">塞程</a></li>
+                          
+                           <li><a href="#">数据</a></li>
+                           
+                           <li> <a href="#">季后赛</a></li>
+                          
+                           <li><a href="#">社区</a></li>
+                           
+                           <li><a href="#">原创</a></li>
+                           
+                           <li><a href="#">节目</a></li>
+                           
+                           <li><a href="#">评论</a></li>
+                           
+                           <li onMouseOver="show(this)" onMouseOut="Out(this)">
+                             <a href="#">更多</a>
+                               <ul class="class2-li">
+                                   <li>
+                                    <a href="#">游戏</a>
+                                   </li>
+                                   <li>
+                                    <a href="#">ESPN</a>
+                                   </li>
+                               </ul>
+                           </li>
+                           
+                       </ul>
+                   </div> 
+            </div>
+		</div>
+	</div>
+
+   <!-- 首页赛程 -->
+	<div class="area-schedule-lite">
+			<div class="layout">
+				<div class="layout-left"></div>
+                <!-- <div class="layout-center">
+                   <div class="layout-center-middle"></div>
+                </div> -->
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item"> 
+                           <div id="item1" >
+                               <ol>
+                                   <li data-date="昨天"></li>
+                                   <li data-date="昨天"></li>
+                                   <li data-date="昨天"></li>
+                                   <li data-date="昨天"></li>
+                                   <li data-date="昨天"></li>
+                                   <li data-date="昨天"></li>
+                               </ol>
+                           </div>
+                        </div>
+                        <div class="item active"> 
+                            <div id="item2" style="background-color:pink">
+                                 <ol>
+                                   <li data-date="今天"></li>
+                                   <li data-date="今天"></li>
+                                   <li data-date="今天"></li>
+                                   <li data-date="今天"></li>
+                                   <li data-date="今天"></li>
+                                   <li data-date="今天"></li>
+                               </ol>
+                            </div>
+                        </div>
+                        <div class="item">
+                             <div id="item3">
+                                  <ol>
+                                   <li data-date="明天"></li>
+                                   <li data-date="明天"></li>
+                                   <li data-date="明天"></li>
+                                   <li data-date="明天"></li>
+                                   <li data-date="明天"></li>
+                                   <li data-date="明天"></li>
+                               </ol>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="carousel-control left" href="#myCarousel" 
+                       data-slide="prev" style="width:20px;line-height:90px;" >&lsaquo;</a>
+                    <a class="carousel-control right " href="#myCarousel" 
+                       data-slide="next" style="width:20px;line-height:90px;">&rsaquo;</a>
+                </div> 
+                <div class="layout-right"></div>
+			</div>
+    </div>
+
+   <!--  焦点图 -->
+    <div class="area area-focus">
+    	<div class="layout">
+				<div class="slide-wrap">
+                    <div id="myCarousel2" class="carousel slide">
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="item21">
+                                 <img src="images/header/header6.png" alt="First slide">
+                                  <img src="images/header/header7.png" alt="First slide">
+                            </div>
+                           
+                        </div>
+                        <div class="item">
+                            <div class="item21">
+                                 <img src="images/header/header6.png" alt="First slide">
+                                  <img src="images/header/header7.png" alt="First slide">
+                            </div>
+                        </div>
+                    </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel2" 
+                   data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel2" 
+                    data-slide="next">&rsaquo;</a>
+                </div> 
+        </div>
+				<div class="paging">
+                    
+                </div>
+	    </div>
+    </div> 
+
+    <!-- 通栏广告 -->
+    <div class="ad-banner">
+    	<div class="inner">
+    		<a href="#"><img src="images/header/header8.png"></a>
+    	</div>
+    </div>
+
+
+    <!-- 要闻区 -->
+    <div class="area area-news">
+    	<div class="area-cf">
+    		<div class="col-left">
+               <ul  id="ul-left-top">
+                         <li style="height: 40px;font-size:18px;font-weight: 700">
+                            <a class="icon_v bold" target="_blank" href="#" >正视频直播爵士vs勇士</a>
+                            <a class="bold" target="_blank" href="#">同步视频播奇才vs绿军</a>
+                         </li> 
+                         <li>
+                            <a class="tag-red" target="_blank" href="#" style="color: white">
+                                精选
+                            </a> 
+                             <a class="icon_v" target="_blank" href="#" >
+                              克劳德直杀篮下单手劈扣
+                            </a> 
+                            <a class="icon_v" target="_blank" href="#">
+                              沃尔暴走单节19分
+                            </a> 
+                         </li>
+                         <li>
+                             <a class="icon_v" target="_blank" href="#">
+                              斯马特背后运球折叠反手上篮
+                            </a> 
+                            <a class="icon_v" target="_blank" href="#">
+                              沃尔上篮戏耍斯玛特
+                            </a> 
+                         </li>
+                         <li>
+                             <a class="icon_v" target="_blank" href="#">
+                              香波特单臂隔扣伊巴卡
+                            </a> 
+                            <a class="icon_v" target="_blank" href="#">
+                              猛龙vs骑士G1全场回放
+                            </a> 
+                         </li>
+                         <li>
+                             <a class="icon_v" target="_blank" href="#">
+                              季后赛首轮最佳镜头合集 詹皇平筐战斧小卡隔扣小加
+                            </a> 
+                         </li>
+                         <li>
+                            <a class="tag-blue" target="_blank" href="#" style="color: white">
+                                赛事
+                            </a> 
+                            <a class=" " target="_blank" href="#">
+                              绿军大将腰受伤虚惊一场 队友为他报仇凶狠犯规
+                            </a> 
+                         </li>
+                         <li>
+                             <a class="icon_v" target="_blank" href="#">
+                              如何防沃尔？小托马斯竟问儿子：你有啥办法
+                            </a>
+                         </li>
+                         <li>
+                             <a class="icon_v" target="_blank" href="#">
+                             智囊团PK次轮：三分线外最强矛盾碰撞 火箭晋级？
+                            </a>
+                         </li>
+                         <li>
+                              <a class="icon_v" target="_blank" href="#">
+                             马刺认为无需管束戴德蒙 格林：他只是做他自己
+                            </a>
+                         </li>
+                         <li>
+                              <a class="tag-blue" target="_blank" href="#" style="color: white">
+                                勇士
+                            </a> 
+                            <a class=" " target="_blank" href="#">
+                              单打乔：刚打完抢七状态正佳 勇士已经歇太久
+                            </a> 
+                         </li>
+                         <li>
+                            <a class="icon_v" target="_blank" href="#">
+                             勇士推黑八十周年纪念T恤 还记得那句口号吗？
+                            </a>
+                         </li>
+                         <li>
+                             <a class="icon_v" target="_blank" href="#">
+                             科尔将无限期休战 尚未查出病因布朗继续执教
+                            </a>
+                         </li>
+                         <li>
+                            <a class="tag-blue" target="_blank" href="#" style="color: white">
+                                骑士
+                            </a> 
+                            <a class=" " target="_blank" href="#">
+                              詹皇：不关心过去和未来 着眼当下让我时刻清醒
+                            </a> 
+                         </li>
+                         <li>
+                          <a class="icon_v" target="_blank" href="#">
+                             博古特伤后骑士曾联系KG 卢：明年还给他打电话
+                            </a>
+                         </li>
+                         <li>
+                            <a class="icon_v" target="_blank" href="#">
+                             直击-从单场0助攻到10助攻 欧文详解为何爆发
+                            </a>
+                         </li>
+                         <li>
+                         <a class="icon_v" target="_blank" href="#">
+                             专访骑士活宝：詹皇最爱请客 比赛只占生活10%
+                            </a>
+                         </li>
+                         <li>
+                             <a class="tag-red" target="_blank" href="#" style="color: white">
+                                火箭
+                            </a> 
+                             <a class="" target="_blank" href="#">
+                              火箭将帅警惕马刺反扑 德帅：下场或能再胜对手
+                            </a> 
+                         </li>
+                         <li>
+                         <a class="icon_v" target="_blank" href="#">
+                             150名球迷获火箭老板赞助 观战G1见证华丽大胜
+                            </a>
+                         </li>
+                         <li>
+                         <a class="icon_v" target="_blank" href="#">
+                             专访骑士活宝：詹皇最爱请客 比赛只占生活10%
+                            </a>
+                         </li>
+                         <li>
+                         <a class="icon_v" target="_blank" href="#">
+                             哈登亲笔畅谈心路历程：想当为胜利而战的领袖
+                            </a>
+                         </li>
+                         <li>
+                             <a class="tag-red" target="_blank" href="#" style="color: white">
+                                招聘
+                            </a> 
+                             <a class="" target="_blank" href="#">
+                             腾讯体育NBA频道招聘写手 实现梦想的时候到了
+                            </a> 
+                         </li>
+                     </ul>  
+                     <ul id="ul-left-down">
+                         <li>
+                             <a class=" bold" target="_blank" href="#" style="height: 40px;font-size:18px;font-weight: 700">
+                             专访科比：退役384天后首谈人生 未来只做两件事
+                            </a>
+                         </li>
+                         <li>
+                             <a class="tag-red" target="_blank" href="#" style="color: white">
+                               原创
+                            </a> 
+                             <a class="" target="_blank" href="#">
+                             历史上的今天：勇士黑八小牛 玫瑰成最年轻MVP
+                            </a> 
+                          </li> 
+                          <li>
+                             <a class="icon_v" target="_blank" href="#">
+                             十年方获认可！这个组织为球员请命 三年换2美元
+                            </a>
+                           </li>
+                           <li>
+                             <a class="icon_v" target="_blank" href="#">
+                             揭秘季后赛首轮怪象 火箭马刺丢最大优势却晋级
+                            </a>
+                           </li>
+                          <li>
+                             <a class="tag-blue" target="_blank" href="#" style="color: white">
+                               聚焦
+                            </a> 
+                             <a class="" target="_blank" href="#">
+                             昔日第一中锋竟只值次轮签 魔兽市值严重下滑
+                            </a> 
+                          </li>
+                          <li>
+                             <a class="icon_v" target="_blank" href="#">
+                            准状元之父又有疯狂举动 首款球鞋要比詹皇贵
+                            </a>
+                           </li>
+                           <li>
+                             <a class="icon_v" target="_blank" href="#">
+                             快船今夏或交易甜瓜组四巨头 雷迪克太子成筹码
+                            </a>
+                           </li>
+                           <li>
+                             <a class="icon_v" target="_blank" href="#">
+                             道歉？巴克利却又惹圣城女性：知道她们为啥胖了
+                            </a>
+                           </li>
+                           <li>
+                             <a class="icon_v" target="_blank" href="#">
+                             乔治现身迪士尼乐园 湖人球迷疯狂进行招募
+                            </a>
+                           </li>
+                           <li>
+                             <a class="icon_v" target="_blank" href="#">
+                            科比贴出女儿练球视频 举手投足颇有曼巴风采
+                            </a>
+                           </li> 
+                        <li>
+                             <a class="tag-blue" target="_blank" href="#" style="color: white">
+                               社区
+                            </a> 
+                             <a class="" target="_blank" href="#">
+                             此3人是勇士最大威胁？
+                            </a> 
+                          </li>
+                     </ul>    
+            </div>
+    		<div class="middle">
+           <div class="mod-ssjx">
+              <div class="hd">
+              </div>
+           </div>
+        </div>
+    		<div class="col-right">
+           <div class="sb-block" style="position: relative;">    
+               <span style="display: inline-block;width: 4px;height: 20px;background-color: red;margin-right: 3px"></span>
+              <span  style="display: inline-block;font-size: 16px;top: -2px;position: absolute;font-weight: 700">腾讯体育社区</span>
+               <a href="#"><img src="images/header/header9.png"></a>
+               <div id="sb-block-news-list" style="margin-top: 10px;width: 280px;height:32px;line-height: 32px;bottom: 0px;position: absolute;"><a href="#">老流氓 强无敌 强如詹科也只能仰望 </a></div>
+           </div>
+           <!-- 季后赛 -->
+           <div class="sb-block2" style="position: relative;">
+                 <span style="display: inline-block;width: 4px;height: 20px;background-color: red;margin-right: 5px"></span>
+                 <span  style="display: inline-block;font-size: 16px;top: -2px;position: absolute;font-weight: 700">季后对阵赛</span>
+               <div class="sb-block2-content" style="position: relative;margin-bottom: 0px">
+             <!-- 导航头 -->
+             <div style=" top:0px;width: 280px;height: 32px;height: 30px; border-bottom: 2px solid #006bb7;">
+               <ul >
+                   <li class="tab_li selected" style="width: 70px;height: 30px;font-size: 16px;cursor: pointer;">
+                    第一轮
+                   </li>
+                   <li class="tab_li" style=" width: 70px;height: 30px;font-size: 16px;cursor: pointer;">
+                   半决赛
+                   </li>
+                   <li class="tab_li" style="width: 70px;height: 30px;font-size: 16px;cursor: pointer;">
+                   决赛
+                   </li>
+                   <li  class="tab_li" style="width: 70px;height: 30px;font-size: 16px;cursor: pointer;">
+                     总决赛
+                   </li>
+                 </ul>
+             </div>
+                 
+             <!--    导航内容 -->
+             <div  class="conCarousel_box" style="width: 280px;height: 540px;margin-top: 10px;">
+
+
+                <div style="width: 280px;height: 540px;background-color: white;" class="divc">
+                    <ul class="round1-list" style="">
+                      <li>
+                      <a href="#" class="team">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>勇士</h4><span>(W1)</span></div>
+                         <p>4</p>
+                      </a>
+                      <a href="#" class="team">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>开拓者</h4><span>(W8)</span></div>
+                         <p>0</p>
+                      </a> 
+                      </li>
+                      <li>
+                         <a href="#" class="team">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>勇士</h4><span>(W1)</span></div>
+                         <p>4</p>
+                      </a>
+                      <a href="#" class="team">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>开拓者</h4><span>(W8)</span></div>
+                         <p>0</p>
+                      </a>
+                      </li>
+                      <li>
+                        <a href="#" class="team">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>勇士</h4><span>(W1)</span></div>
+                         <p>4</p>
+                      </a>
+                      <a href="#" class="team">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>开拓者</h4><span>(W8)</span></div>
+                         <p>0</p>
+                      </a>
+                      </li>
+                       <li>
+                        <a href="#" class="team">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>勇士</h4><span>(W1)</span></div>
+                         <p>4</p>
+                      </a>
+                      <a href="#" class="team">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>开拓者</h4><span>(W8)</span></div>
+                         <p>0</p>
+                      </a>
+                      </li>
+                    </ul>
+                    <ul class="round1-list">
+                      <li>
+                      <a href="#" class="team team2">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>勇士</h4><span>(W1)</span></div>
+                         <p>4</p>
+                      </a>
+                      <a href="#" class="team team2">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>开拓者</h4><span>(W8)</span></div>
+                         <p>0</p>
+                      </a> 
+                      </li>
+                      <li>
+                         <a href="#" class="team team2">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>勇士</h4><span>(W1)</span></div>
+                         <p>4</p>
+                      </a>
+                      <a href="#" class="team team2">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>开拓者</h4><span>(W8)</span></div>
+                         <p>0</p>
+                      </a>
+                      </li>
+                      <li>
+                        <a href="#" class="team team2">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>勇士</h4><span>(W1)</span></div>
+                         <p>4</p>
+                      </a>
+                      <a href="#" class="team team2">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>开拓者</h4><span>(W8)</span></div>
+                         <p>0</p>
+                      </a>
+                      </li>
+                       <li>
+                        <a href="#" class="team team2">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>勇士</h4><span>(W1)</span></div>
+                         <p>4</p>
+                      </a>
+                      <a href="#" class="team team2">
+                         <img src="" alt="" style="width: 46px;height: 46px;background-color: yellow">
+                         <div><h4>开拓者</h4><span>(W8)</span></div>
+                         <p>0</p>
+                      </a>
+                      </li>
+                    </ul>
+                </div>
+
+
+
+                <div style="width: 280px;height: 540px;" class="divc hide2" >
+                   <ul class="round2-list">
+                     <li>
+                         <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                         <div class="goal">
+                         4:0 
+                         </div>
+                         <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                     </li>
+                     <li>
+                       <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                         <div class="goal">
+                         4:0 
+                         </div>
+                         <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                     </li>
+                     <li>
+                       <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                         <div class="goal">
+                         4:0 
+                         </div>
+                         <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                     
+                     </li>
+                     <li>
+                        <a href="#" class="team"><img src="">
+                           <div>"爵士"<span>(W1)</span></div>
+                        </a>
+                         <div class="goal">
+                         4:0 
+                         </div>
+                         <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                     </li>
+                   </ul>
+                </div>
+
+
+
+                <div style="width: 280px;height: 540px;" class="divc hide2">
+                   <ul class="round3-list">
+                     <li>
+                       <div >
+                          <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                         <div class="goal">
+                         4:0 
+                         </div>
+                         <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                       </div>
+                       <div>
+                            <ol style="list-style: none;margin-left: 24px;width: 140px;">
+                              <li><a href="#">05.15 | 113-111</a></li>
+                              <li><a href="#">05.15 | 113-111</a></li>
+                              <li><a href="#">05.15 | 113-111</a></li>
+                              <li><a href="#">05.15 | 113-111</a></li>
+                            </ol>
+                       </div>
+                     </li>
+                     <li>
+                        <div>
+                          <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                         <div class="goal">
+                         4:0 
+                         </div>
+                         <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                       </div>
+                       <div>
+                            <ol style="list-style: none;margin-left: 24px;width: 140px;">
+                              <li><a href="#">05.15 | 113-111</a></li>
+                              <li><a href="#">05.15 | 113-111</a></li>
+                              <li><a href="#">05.15 | 113-111</a></li>
+                              <li><a href="#">05.15 | 113-111</a></li>
+                            </ol>
+                       </div>
+                     </li>
+                   </ul>
+                </div>
+
+                <div style="width: 280px;height: 540px;"  class="divc hide2">
+                  <div class="round4-list">
+                        <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                         <div class="goal">
+                         4:0 
+                         </div>
+                         <a href="#" class="team"><img src=""><div>"爵士"<span>(W1)</span></div></a>
+                  </div>
+                  <div class="round4-list-zd" style="width: 280px;height: 315px;margin-top: 0px;float: left;
+                  border-bottom:1px solid red">
+                       <ol >
+                        <li class="ol_li">
+                           <a href="#">
+                               <span class="ol_li-span ol_li-span1">06.02</span>
+                               <span class="ol_li-span ol_li-span2">113-91</span>
+                               <span class="ol_li-span ol_li-span2">主-客</span>
+                           </a>
+                        </li>
+                        <div class="div-li-co" >
+                          <h4>本厂比赛数据</h4>
+                          <p>投篮命中</p>
+                          <div></div>
+                          <p>三分命中</p>
+                          <div></div>
+                          <p>罚球命中</p>
+                          <div></div>
+                        </div>
+                        <li class="ol_li">
+                           <a href="#">
+                               <span class="ol_li-span ol_li-span1">06.02</span>
+                               <span class="ol_li-span ol_li-span2">113-91</span>
+                               <span class="ol_li-span ol_li-span2">主-客</span>
+                           </a>
+                        </li>
+                        <div class="div-li-co" style="display: none;">
+                           <h4>本厂比赛数据</h4>
+                          <p>投篮命中</p>
+                          <div></div>
+                          <p>三分命中</p>
+                          <div></div>
+                          <p>罚球命中</p>
+                          <div></div>
+                        </div>
+                        <li class="ol_li">
+                          <a href="#">
+                               <span class="ol_li-span ol_li-span1">06.02</span>
+                               <span class="ol_li-span ol_li-span2">113-91</span>
+                               <span class="ol_li-span ol_li-span2">主-客</span>
+                           </a>
+                        </li>
+                       
+                        <li class="ol_li">
+                          <a href="#">
+                               <span class="ol_li-span ol_li-span1">06.02</span>
+                               <span class="ol_li-span ol_li-span2">113-91</span>
+                               <span class="ol_li-span ol_li-span2">主-客</span>
+                           </a>
+                        </li>
+                       
+                       
+                    </ol>
+                  </div>
+                    
+                 
+                 
+                </div>
+             </div>
+  
+        </div>
+    	</div>
+     
+    </div>
+
+   <!--  通栏广告 -->
+   <div class="ad-banner" id="ID_AD_Banner5" style="margin-top:0px;
+   margin-bottom:20px;height:90px;">
+   	     通栏广告 
+   </div>
+
+
+    <!-- 热门视频 -->
+     <div class="js-lazy-area ele-video" data-lazy-loadead="yes" style="width: 100%;height: 418px;background-color: white">
+     	  <div class="area area-hotv">
+     	  	<div class="layout">
+     	  	  <div class="block-title" style="position: relative;">
+              <img src="images/header/header10.png">
+              <div id="block-title-list" style="width: 1063px;height:34px;line-height: 34px;bottom: 0px;position: absolute;right: 0px;border-bottom: 2px solid blue;padding-left: 10px">
+                    <a href="#">直播大厅</a>
+                    <a href="#">视频首页</a>
+              </div>
+            </div>
+              <div class="block-body cf">
+                 <div class="block-body1">
+                    <div id="body1-top">
+                      <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="400" height="225"
+                        poster="http://video-js.zencoder.com/oceans-clip.png"
+                        data-setup="{}">
+                      <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                      <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                      <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                      <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                      <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                      </video>
+                    </div>
+                    <div id="body1-down">
+                    <img src="images/header/header31.jpg">
+                    </div>
+                 </div>
+                 <div class="block-body2">
+                 <div class="pic-item">
+                            <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="240" height="135"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                 </div>
+                 <div class="pic-item">
+                          <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="240" height="135"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                 </div>
+                 <div class="pic-item">
+                        <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="240" height="135"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                 </div>
+                 <div class="pic-item">
+                          <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="240" height="135"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                 </div>
+                 <div class="pic-item">
+                          <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="240" height="135"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                 </div>
+                 <div class="pic-item">
+                          <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="240" height="135"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                 </div>
+                 </div>
+              </div>
+     	  	</div>
+     	  </div>
+     	  <script type="text/javascript"></script>
+     </div>
+<!-- 
+    专家解读 -->
+    <div class="area area-experts">
+    	<div class="layout">
+    		  <div class="block-title">
+          <a href="#"><img src="images/header/header11.png"></a>
+          </div>
+          <div class="block-body">
+          <!-- 专家一 -->
+          <div class="zhuanjia zhuanjia-large">
+             <div class="photo">
+             <img src="images/header/header12.jpg">
+             </div>
+             <div class="name">
+                <a href="#" class="more">阅读全部</a>
+                <a href="#">
+                  <h3>张卫平</h3>
+                </a>
+                <i class="underline"></i>
+             </div>
+             <div class="title">
+             <a href="#">球衣退役，姚明堪称最佳</a>
+             </div>
+             <div class="desc">
+             "球衣退役仪式比名人堂更重要，这是对于一名运动员最高的评价。"
+             </div>
+          </div> 
+
+          <!-- 专家二 -->
+          <div class="zhuanjia">
+              <div class="photo">
+             <img src="images/header/header13.jpg">
+             </div>
+             <div class="name">
+                <a href="#" class="more">阅读全部</a>
+                <a href="#">
+                  <h3>苏群</h3>
+                </a>
+                <i class="underline"></i>
+             </div>
+             <div class="title">
+             <a href="#">你不能错过圣保罗</a>
+             </div>
+             <div class="desc">
+             "保罗和现在这支快船队，季后赛任何一种形式的有利开局都见过。"
+             </div>
+          </div>
+         <!--  专家三 -->
+          <div class="zhuanjia">
+              <div class="photo">
+             <img src="images/header/header14.jpg">
+             </div>
+             <div class="name">
+                <a href="#" class="more">阅读全部</a>
+                <a href="#">
+                  <h3>杨毅</h3>
+                </a>
+                <i class="underline"></i>
+             </div>
+             <div class="title">
+             <a href="#">内内如姚明附体</a>
+             </div>
+             <div class="desc">
+             "每个系列赛，都有这样一战。此战之后，高下已判。"
+             </div>
+          </div>
+         <!--  专家四 -->
+          <div class="zhuanjia">
+               <div class="photo">
+             <img src="images/header/header15.jpg">
+             </div>
+             <div class="name">
+                <a href="#" class="more">阅读全部</a>
+                <a href="#">
+                  <h3>王猛</h3>
+                </a>
+                <i class="underline"></i>
+             </div>
+             <div class="title">
+             <a href="#">MVP到底是谁？</a>
+             </div>
+             <div class="desc">
+             "你心里的MVP会是谁，取决于你怎么看待价值。"
+             </div>
+          </div>
+          </div>
+    	</div>
+    	<script type="text/javascript"></script>
+    </div>
+
+
+   <!--  深度NBA -->
+
+    <div class="js-lazy-area" style="height:980px;" data-lazy-loadead="yes">
+    	<div class="area area-deepin">
+    		<div class="layout">
+    			 <div class="block-title">
+              <img src="images/header/header16.png">
+           </div>
+           <div class="block-body block-1p3t">
+               <ul id="NBAColumns" class="wrap cf">
+                <!--  独家专访 -->
+                 <li>
+                    <div class="hd">
+                       <h3><a href="#">独家专访</a></h3>
+                    </div>
+                    <div class="bd">
+                       <div class="pic-item pic-item-large">
+                          <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                       </div>
+                          <ul class="text-news" >
+                            <li>
+                              <a href="#">专访巴恩斯：尊重每一个对手 夺冠是终极目标</a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士活宝：詹皇最爱请客 比赛只占生活10%</a>
+                            </li>
+                            <li>
+                               <a href="#">张指导专访哈登：盼周琦加盟 他能适应火箭体系</a>
+                            </li>
+                            <li>
+                              <a href="#">专访火箭旧将：90万年薪二轮秀是猛龙最佳球员 </a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士悍将：打不上球不是坏事 要学詹皇欧文</a>
+                            </li>
+                          </ul>
+                      
+                    </div>
+                 </li>
+                 <!-- 图片策划 -->
+                 <li>
+                     <div class="hd">
+                      <h3><a>图片策划</a></h3>
+                    </div>
+                    <div class="bd">
+                       <div class="pic-item pic-item-large">
+                           <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                       </div>
+                          <ul class="text-news" >
+                            <li>
+                              <a href="#">专访巴恩斯：尊重每一个对手 夺冠是终极目标</a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士活宝：詹皇最爱请客 比赛只占生活10%</a>
+                            </li>
+                            <li>
+                               <a href="#">张指导专访哈登：盼周琦加盟 他能适应火箭体系</a>
+                            </li>
+                            <li>
+                              <a href="#">专访火箭旧将：90万年薪二轮秀是猛龙最佳球员 </a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士悍将：打不上球不是坏事 要学詹皇欧文</a>
+                            </li>
+                          </ul>
+                    </div>
+                 </li>
+                 <!-- 原创精品 -->
+                 <li>
+                     <div class="hd">
+                       <h3><a>原创精品</a></h3>
+                    </div>
+                    <div class="bd">
+                       <div class="pic-item pic-item-large">
+                           <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                       </div>
+                          <ul class="text-news" >
+                            <li>
+                              <a href="#">专访巴恩斯：尊重每一个对手 夺冠是终极目标</a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士活宝：詹皇最爱请客 比赛只占生活10%</a>
+                            </li>
+                            <li>
+                               <a href="#">张指导专访哈登：盼周琦加盟 他能适应火箭体系</a>
+                            </li>
+                            <li>
+                              <a href="#">专访火箭旧将：90万年薪二轮秀是猛龙最佳球员 </a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士悍将：打不上球不是坏事 要学詹皇欧文</a>
+                            </li>
+                          </ul>
+                    </div>
+                 </li>
+                <!--  巅峰对决 -->
+                 <li>
+                     <div class="hd">
+                        <h3><a>巅峰对决</a></h3>
+                    </div>
+                    <div class="bd">
+                       <div class="pic-item pic-item-large">
+                           <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                       </div>
+                          <ul class="text-news" >
+                            <li>
+                              <a href="#">专访巴恩斯：尊重每一个对手 夺冠是终极目标</a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士活宝：詹皇最爱请客 比赛只占生活10%</a>
+                            </li>
+                            <li>
+                               <a href="#">张指导专访哈登：盼周琦加盟 他能适应火箭体系</a>
+                            </li>
+                            <li>
+                              <a href="#">专访火箭旧将：90万年薪二轮秀是猛龙最佳球员 </a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士悍将：打不上球不是坏事 要学詹皇欧文</a>
+                            </li>
+                          </ul>
+                    </div>
+                 </li>
+                 <!-- 绝对巨星 -->
+                 <li>
+                     <div class="hd">
+                        <h3><a>绝对巨星</a></h3>
+                    </div>
+                    <div class="bd">
+                       <div class="pic-item pic-item-large">
+                           <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                       </div>
+                          <ul class="text-news" >
+                            <li>
+                              <a href="#">专访巴恩斯：尊重每一个对手 夺冠是终极目标</a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士活宝：詹皇最爱请客 比赛只占生活10%</a>
+                            </li>
+                            <li>
+                               <a href="#">张指导专访哈登：盼周琦加盟 他能适应火箭体系</a>
+                            </li>
+                            <li>
+                              <a href="#">专访火箭旧将：90万年薪二轮秀是猛龙最佳球员 </a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士悍将：打不上球不是坏事 要学詹皇欧文</a>
+                            </li>
+                          </ul>
+                    </div>
+                 </li>
+                 <!-- 超级战队 -->
+                 <li>
+                      <div class="hd">
+                        <h3><a>超级战队</a></h3>
+                      </div>
+                    <div class="bd">
+                      <div class="pic-item pic-item-large">
+                           <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                       </div>
+                          <ul class="text-news" >
+                            <li>
+                              <a href="#">专访巴恩斯：尊重每一个对手 夺冠是终极目标</a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士活宝：詹皇最爱请客 比赛只占生活10%</a>
+                            </li>
+                            <li>
+                               <a href="#">张指导专访哈登：盼周琦加盟 他能适应火箭体系</a>
+                            </li>
+                            <li>
+                              <a href="#">专访火箭旧将：90万年薪二轮秀是猛龙最佳球员 </a>
+                            </li>
+                            <li>
+                              <a href="#">专访骑士悍将：打不上球不是坏事 要学詹皇欧文</a>
+                            </li>
+                          </ul>
+                    </div>
+                 </li>
+               </ul>
+           </div>
+    		</div>
+    	</div>
+    	<script type="text/javascript"></script>
+    </div>
+
+    <!-- 通栏广告 -->
+    <div class="ad-type-b" style="height:90px;margin-top:0;margin-bottom:20px;background-color:red; width:1240px;margin: 0px auto">
+    	<div class="layout">
+    		通栏广告
+    	</div>
+    </div>
+    
+    <!-- 最佳球员 -->
+    <div class="js-lazy-area ele-player" style="height:500px;">
+    	<div class="area area-best">
+        		<div class="layout">
+              <div class="block-title">
+                 <div style="width: 172px;height: 100%;display: inline-block;float: left;">
+                 <img src="images/header/header17.png">
+                 </div>
+                  <div id="block-title-tab" style="width: 173px;height: 100%;display: inline-block;left: 172px;float: left;">
+                       <div id="tab-title" style="width: 170px;height: 100%;display: inline-block;">
+                            <div id="tab-title1" >
+                            今日最佳
+                            </div>
+                            <div id="tab-title2"  >
+                            本赛季
+                            </div>
+                       </div>
+                  </div>
+              </div>
+              <div class="block-body">  
+                    <div id="block-body1"  >
+                         <ul class="cf" >
+                              <li>
+                                     <a class="player-1" style="display: block;width: 300px;height: 240px ">
+                                         <img src="images/header/photo1.png" alt="player-1" style="float: left;">
+                                         <img src="images/header/photo1_1.jpg" alt="player-1" style="float: left;">
+                                     </a>
+                                     <a href="#" class="player-2" style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;margin:20px auto" >
+                                      <div class="rank" >2</div>
+                                      <div class="photo" >
+                                      <img src="images/header/photo11.jpg"></div>
+                                      <div class="name">
+                                      <p>埃弗里-布拉德利</p>
+                                      <span>后卫 /  凯尔特人</span>
+                                      </div>
+                                      <div class="score" >27</div>
+                                     </a>
+                                      <a href="#" class="player-3"  style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;">
+                                        <div class="rank" >3</div>
+                                          <div class="photo" >
+                                          <img src="images/header/photo11.jpg"></div>
+                                          <div class="name">
+                                          <p>以赛亚-托马斯</p>
+                                          <span>后卫 /  凯尔特人</span>
+                                          </div>
+                                          <div class="score" >27</div>
+                                     </a>
+                                     </a>
+                              </li>
+                              <li>
+                                     <a class="player-1" style="display: block;width: 300px;height: 240px ">
+                                         <img src="images/header/photo2.png" alt="player-1" style="float: left;">
+                                         <img src="images/header/photo1_1.jpg" alt="player-1" style="float: left;">
+                                     </a>
+                                     <a href="#" class="player-2" style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;margin:20px auto">
+                                      <div class="rank" >2</div>
+                                      <div class="photo" >
+                                      <img src="images/header/photo11.jpg"></div>
+                                      <div class="name">
+                                      <p>马基夫-莫里斯</p>
+                                      <span>马基夫-莫里斯</span>
+                                      </div>
+                                      <div class="score" >11</div>
+                                     </a>
+                                      <a href="#" class="player-3"  style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;">
+                                        <div class="rank" >3</div>
+                                          <div class="photo" >
+                                          <img src="images/header/photo11.jpg"></div>
+                                          <div class="name">
+                                          <p>凯利-奥利尼克</p>
+                                          <span>中锋-前锋 /  凯尔特人</span>
+                                          </div>
+                                          <div class="score" >8</div>
+                                     </a>
+                                     </a>
+                              </li>
+                              <li>
+                                 <a class="player-1" style="display: block;width: 300px;height: 240px ">
+                                         <img src="images/header/photo3.png" alt="player-1" style="float: left;">
+                                         <img src="images/header/photo1_1.jpg" alt="player-1" style="float: left;">
+                                     </a>
+                                     <a href="#" class="player-2" style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;margin:20px auto">
+                                      <div class="rank" >2</div>
+                                      <div class="photo" >
+                                      <img src="images/header/photo11.jpg"></div>
+                                      <div class="name">
+                                      <p>约翰-沃尔</p>
+                                      <span>后卫 /  奇才</span>
+                                      </div>
+                                      <div class="score" >11</div>
+                                     </a>
+                                      <a href="#" class="player-3"  style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;">
+                                        <div class="rank" >3</div>
+                                          <div class="photo" >
+                                          <img src="images/header/photo11.jpg"></div>
+                                          <div class="name">
+                                          <p>以赛亚-托马斯</p>
+                                          <span>后卫 /  凯尔特人</span>
+                                          </div>
+                                          <div class="score" >8</div>
+                                     </a>
+                                     </a>
+
+                              </li>
+                              <li>
+                                   <a class="player-1" style="display: block;width: 300px;height: 240px ">
+                                         <img src="images/header/photo4.png" alt="player-1" style="float: left;">
+                                         <img src="images/header/photo1_1.jpg" alt="player-1" style="float: left;">
+                                     </a>
+                                     <a href="#" class="player-2" style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;margin:20px auto">
+                                      <div class="rank" >2</div>
+                                      <div class="photo" >
+                                      <img src="images/header/photo11.jpg"></div>
+                                      <div class="name">
+                                      <p>马基夫-莫里斯</p>
+                                      <span>马基夫-莫里斯</span>
+                                      </div>
+                                      <div class="score" >11</div>
+                                     </a>
+                                      <a href="#" class="player-3"  style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;">
+                                        <div class="rank" >3</div>
+                                          <div class="photo" >
+                                          <img src="images/header/photo11.jpg"></div>
+                                          <div class="name">
+                                          <p>约翰-沃尔</p>
+                                          <span>后卫 /  奇才</span>
+                                          </div>
+                                          <div class="score" >8</div>
+                                     </a>
+                                     </a>
+                              </li>
+                         </ul>
+                    </div>
+                    <div id="block-body2" >
+                               <ul class="cf" >
+                              <li>
+                                     <a class="player-1" style="display: block;width: 300px;height: 240px ">
+                                         <img src="images/header/photo1.png" alt="player-1" style="float: left;">
+                                         <img src="images/header/photo2-1.jpg" alt="player2-1" style="float: left;">
+                                     </a>
+                                     <a href="#" class="player-2" style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;margin:20px auto" >
+                                      <div class="rank" >2</div>
+                                      <div class="photo" >
+                                      <img src="images/header/photo11.jpg"></div>
+                                      <div class="name">
+                                      <p>埃弗里-布拉德利</p>
+                                      <span>后卫 /  凯尔特人</span>
+                                      </div>
+                                      <div class="score" >27</div>
+                                     </a>
+                                      <a href="#" class="player-3"  style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;">
+                                        <div class="rank" >3</div>
+                                          <div class="photo" >
+                                          <img src="images/header/photo11.jpg"></div>
+                                          <div class="name">
+                                          <p>以赛亚-托马斯</p>
+                                          <span>后卫 /  凯尔特人</span>
+                                          </div>
+                                          <div class="score" >27</div>
+                                     </a>
+                                     </a>
+                              </li>
+                              <li>
+                                     <a class="player-1" style="display: block;width: 300px;height: 240px ">
+                                         <img src="images/header/photo2.png" alt="player-1" style="float: left;">
+                                         <img src="images/header/photo1_1.jpg" alt="player-1" style="float: left;">
+                                     </a>
+                                     <a href="#" class="player-2" style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;margin:20px auto">
+                                      <div class="rank" >2</div>
+                                      <div class="photo" >
+                                      <img src="images/header/photo11.jpg"></div>
+                                      <div class="name">
+                                      <p>马基夫-莫里斯</p>
+                                      <span>马基夫-莫里斯</span>
+                                      </div>
+                                      <div class="score" >11</div>
+                                     </a>
+                                      <a href="#" class="player-3"  style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;">
+                                        <div class="rank" >3</div>
+                                          <div class="photo" >
+                                          <img src="images/header/photo11.jpg"></div>
+                                          <div class="name">
+                                          <p>凯利-奥利尼克</p>
+                                          <span>中锋-前锋 /  凯尔特人</span>
+                                          </div>
+                                          <div class="score" >8</div>
+                                     </a>
+                                     </a>
+                              </li>
+                              <li>
+                                 <a class="player-1" style="display: block;width: 300px;height: 240px ">
+                                         <img src="images/header/photo3.png" alt="player-1" style="float: left;">
+                                         <img src="images/header/photo1_1.jpg" alt="player-1" style="float: left;">
+                                     </a>
+                                     <a href="#" class="player-2" style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;margin:20px auto">
+                                      <div class="rank" >2</div>
+                                      <div class="photo" >
+                                      <img src="images/header/photo11.jpg"></div>
+                                      <div class="name">
+                                      <p>约翰-沃尔</p>
+                                      <span>后卫 /  奇才</span>
+                                      </div>
+                                      <div class="score" >11</div>
+                                     </a>
+                                      <a href="#" class="player-3"  style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;">
+                                        <div class="rank" >3</div>
+                                          <div class="photo" >
+                                          <img src="images/header/photo11.jpg"></div>
+                                          <div class="name">
+                                          <p>以赛亚-托马斯</p>
+                                          <span>后卫 /  凯尔特人</span>
+                                          </div>
+                                          <div class="score" >8</div>
+                                     </a>
+                                     </a>
+
+                              </li>
+                              <li>
+                                   <a class="player-1" style="display: block;width: 300px;height: 240px ">
+                                         <img src="images/header/photo4.png" alt="player-1" style="float: left;">
+                                         <img src="images/header/photo1_1.jpg" alt="player-1" style="float: left;">
+                                     </a>
+                                     <a href="#" class="player-2" style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;margin:20px auto">
+                                      <div class="rank" >2</div>
+                                      <div class="photo" >
+                                      <img src="images/header/photo11.jpg"></div>
+                                      <div class="name">
+                                      <p>马基夫-莫里斯</p>
+                                      <span>马基夫-莫里斯</span>
+                                      </div>
+                                      <div class="score" >11</div>
+                                     </a>
+                                      <a href="#" class="player-3"  style="display: block;width: 300px;height:50px;background-color: white;border-top:1px solid #8F8E8E;">
+                                        <div class="rank" >3</div>
+                                          <div class="photo" >
+                                          <img src="images/header/photo11.jpg"></div>
+                                          <div class="name">
+                                          <p>约翰-沃尔</p>
+                                          <span>后卫 /  奇才</span>
+                                          </div>
+                                          <div class="score" >8</div>
+                                     </a>
+                                     </a>
+                              </li>
+                         </ul>>
+                    </div>
+                   
+          </div>
+
+   </div>
+   </div>
+   </div>
+  
+
+    <!-- 体育社区 -->
+     <div class="js-lazy-area ele-shequ" style="height:436px;" data-lazy-loadead="yes">
+      <div class="area area-fans">
+        <div class="layout">
+              <div class="block-title">
+                  <a href="#"><img src="images/header/header20.png"></a>
+              </div>
+              <div class="block-body cf">
+                 <div class="recommend">
+                     <ul class="cf">
+                        <li>
+                           <a href="#">
+                             <div class="team-logo"><img src="images/header/header21.jpg" alt="骑士"> </div>
+                            <p>骑士</p>
+                            <span>今日帖子：188</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <div class="team-logo"><img src="images/header/header21.jpg" alt="骑士"> </div>
+                             <p>骑士</p>
+                             <span>今日帖子：188</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                             <div class="team-logo"><img src="images/header/header21.jpg" alt="骑士"> </div>
+                             <p>骑士</p>
+                             <span>今日帖子：188</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <div class="team-logo"><img src="images/header/header21.jpg" alt="骑士"> </div>
+                             <p>骑士</p>
+                             <span>今日帖子：188</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <div class="team-logo"><img src="images/header/header21.jpg" alt="骑士"> </div>
+                             <p>骑士</p>
+                             <span>今日帖子：188</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <div class="team-logo"><img src="images/header/header21.jpg" alt="骑士"> </div>
+                             <p>骑士</p>
+                             <span>今日帖子：188</span>
+                           </a>
+                        </li>
+                    </ul>
+                 </div>
+                 <div class="hotposts">      
+                   <ul>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                   </ul>
+                   <ul>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                     <li><a href="#">强势骑士仍有隐忧，欧文不找回投篮手感骑士难夺冠？</a></li>
+                   </ul>
+                 
+                </div>
+             </div>
+        </div>
+      </div>
+     </div>
+
+     <!-- 通栏广告
+     <div class="ad-banner" id="ID_AD_Banner4" style="height:60px;margin-top:0;margin-bottom:20px;background:dark">
+     	
+     </div> -->
+     <!-- 巨星动态 -->
+     
+     <div class="js-lazy-area ele-star" style="height:980px;" data-lazy-loadead="yes">
+     	<div class="area area-stars">
+     		<div class="layout">
+     		    <div class="block-title">
+                      <a href="#"><img src="images/header/header22.png"></a>
+                  </div>
+               <div class="block-body block-1p3t">
+                  
+                     <ul>
+                         <li>
+                            <div class="hd">
+                               <h3><a href="#">独家专访</a></h3>
+                            </div>
+                            <div class="bd">
+                               <div class="pic-item pic-item-large">
+                                <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                              poster="http://video-js.zencoder.com/oceans-clip.png"
+                              data-setup="{}">
+                            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                            <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                               </div>
+                                <ul class="text-news" >
+                                  <li>
+                                    <a href="#">致20多岁的你：莫愁前路 詹皇也曾在失败中煎熬</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">绿军季后赛六连胜有秘诀！科比倾囊帮助小刺客</a>
+                                  </li>
+                                  <li>
+                                     <a href="#">称小刺客为迷你曼巴？科比说不：他有曼巴精神</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">科比贴出女儿练球视频 举手投足颇有曼巴风采 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">詹皇一战创仨里程碑 季后赛得分和三分均超科比</a>
+                                  </li>
+                                </ul>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="hd">
+                               <h3><a href="#">独家专访</a></h3>
+                            </div>
+                            <div class="bd">
+                               <div class="pic-item pic-item-large">
+                                     <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                          </video>
+                               </div>
+                              <ul class="text-news" >
+                                  <li>
+                                    <a href="#">致20多岁的你：莫愁前路 詹皇也曾在失败中煎熬</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">绿军季后赛六连胜有秘诀！科比倾囊帮助小刺客</a>
+                                  </li>
+                                  <li>
+                                     <a href="#">称小刺客为迷你曼巴？科比说不：他有曼巴精神</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">科比贴出女儿练球视频 举手投足颇有曼巴风采 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">詹皇一战创仨里程碑 季后赛得分和三分均超科比</a>
+                                  </li>
+                                </ul>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="hd">
+                               <h3><a href="#">独家专访</a></h3>
+                            </div>
+                            <div class="bd">
+                               <div class="pic-item pic-item-large">
+                               <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                               </div>
+                               <ul class="text-news" >
+                                  <li>
+                                    <a href="#">致20多岁的你：莫愁前路 詹皇也曾在失败中煎熬</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">绿军季后赛六连胜有秘诀！科比倾囊帮助小刺客</a>
+                                  </li>
+                                  <li>
+                                     <a href="#">称小刺客为迷你曼巴？科比说不：他有曼巴精神</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">科比贴出女儿练球视频 举手投足颇有曼巴风采 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">詹皇一战创仨里程碑 季后赛得分和三分均超科比</a>
+                                  </li>
+                                </ul>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="hd">
+                               <h3><a href="#">独家专访</a></h3>
+                            </div>
+                            <div class="bd">
+                               <div class="pic-item pic-item-large">
+                               <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                               </div>
+                              <ul class="text-news" >
+                                  <li>
+                                    <a href="#">致20多岁的你：莫愁前路 詹皇也曾在失败中煎熬</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">绿军季后赛六连胜有秘诀！科比倾囊帮助小刺客</a>
+                                  </li>
+                                  <li>
+                                     <a href="#">称小刺客为迷你曼巴？科比说不：他有曼巴精神</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">科比贴出女儿练球视频 举手投足颇有曼巴风采 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">詹皇一战创仨里程碑 季后赛得分和三分均超科比</a>
+                                  </li>
+                                </ul>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="hd">
+                               <h3><a href="#">独家专访</a></h3>
+                            </div>
+                            <div class="bd">
+                               <div class="pic-item pic-item-large">
+                               <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                               </div>
+                               <ul class="text-news" >
+                                  <li>
+                                    <a href="#">致20多岁的你：莫愁前路 詹皇也曾在失败中煎熬</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">绿军季后赛六连胜有秘诀！科比倾囊帮助小刺客</a>
+                                  </li>
+                                  <li>
+                                     <a href="#">称小刺客为迷你曼巴？科比说不：他有曼巴精神</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">科比贴出女儿练球视频 举手投足颇有曼巴风采 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">詹皇一战创仨里程碑 季后赛得分和三分均超科比</a>
+                                  </li>
+                                </ul>
+                            </div>
+                         </li>
+                         <li>
+                            <div class="hd">
+                               <h3><a href="#">独家专访</a></h3>
+                            </div>
+                            <div class="bd">
+                               <div class="pic-item pic-item-large">
+                               <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                               </div>
+                              <ul class="text-news" >
+                                  <li>
+                                    <a href="#">致20多岁的你：莫愁前路 詹皇也曾在失败中煎熬</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">绿军季后赛六连胜有秘诀！科比倾囊帮助小刺客</a>
+                                  </li>
+                                  <li>
+                                     <a href="#">称小刺客为迷你曼巴？科比说不：他有曼巴精神</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">科比贴出女儿练球视频 举手投足颇有曼巴风采 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">詹皇一战创仨里程碑 季后赛得分和三分均超科比</a>
+                                  </li>
+                                </ul>
+                            </div>
+                         </li>
+                      </ul>    
+               </div>
+     		</div>
+     	</div>
+     </div>
+
+
+    <!-- 球队动态 -->
+
+     <div class="js-lazy-area ele-team" style="height:980px;" data-lazy-loadead="yes">
+
+      <div class=" area area-teams">
+        <div class="layout">
+                <div class="block-title">
+                      <a href="#"><img src="images/header/header23.png"></a>
+                  </div>
+                 <div class="block-body block-1p3t">
+                    
+                     <ul>
+                             <li>
+                                <div class="hd">
+                                   <h3><a href="#">火箭</a></h3>
+                                </div>
+                                <div class="bd">
+                                   <div class="pic-item pic-item-large">
+                                   <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                                   </div>
+                                    <ul class="text-news" >
+                                      <li>
+                                        <a href="#">火箭旧将调侃哈登 如何从表情判断卡哇伊伤没伤</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">火箭G6取胜之匙：放弃七人轮换 下起三分雨</a>
+                                      </li>
+                                      <li>
+                                         <a href="#">休城球迷市长发文打气 宣布明天为火箭加油日</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">让7分！博彩公司看好火箭赢G6 休城逃过一劫？ </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">德帅自曝当年被甜瓜逼离纽约：我直接提出辞职</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="hd">
+                                   <h3><a href="#">湖人</a></h3>
+                                </div>
+                                <div class="bd">
+                                   <div class="pic-item pic-item-large">
+                                   <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                                   </div>
+                                  <ul class="text-news" >
+                                      <li>
+                                        <a href="#">德帅自曝当年被甜瓜逼离纽约：我直接提出辞职</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">湖人今夏补强需避开五球星 格里芬韦德皆在榜单</a>
+                                      </li>
+                                      <li>
+                                         <a href="#">奥胖成2K传奇版封面人物 和科比共演搞笑宣传片</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">湖人超六又勾上帕帅前女友 9400万先生送祝福</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">历史上的今天：米勒8秒砍8分 掘金首演黑八奇迹</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="hd">
+                                   <h3><a href="#">骑士</a></h3>
+                                </div>
+                                <div class="bd">
+                                   <div class="pic-item pic-item-large">
+                                   <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                                   </div>
+                                   <ul class="text-news" >
+                                      <li>
+                                        <a href="#">八贤王分享抢前场板秘诀：我会研究队友的投篮</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">卢帅：骑勇会师总决不是坏事 让人想起魔鸟争霸</a>
+                                      </li>
+                                      <li>
+                                         <a href="#">季后赛MVP榜：詹皇压库里 哈登第6韦少落榜</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">王猛：马刺火箭会抢七 骑士勇士三番战总决</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">TT：别回想3年6次横扫 保持状态为东决做准备</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="hd">
+                                   <h3><a href="#">勇士</a></h3>
+                                </div>
+                                <div class="bd">
+                                   <div class="pic-item pic-item-large">
+                                   <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                                   </div>
+                                  <ul class="text-news" >
+                                      <li>
+                                        <a href="#">横扫爵士后再称赞爵士 KD：他们逼出最强勇士</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">追梦揭勇士不可阻挡真因：人人都愿做脏活累活</a>
+                                      </li>
+                                      <li>
+                                         <a href="#">拥有能控制行为和情绪的追梦 勇士无往而不胜</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">勇士已看衰火箭？ 临时主帅：现在更关心马刺</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">勇士同甲骨文球馆续约两年 2019年将搬至新主场</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="hd">
+                                   <h3><a href="#">马刺</a></h3>
+                                </div>
+                                <div class="bd">
+                                   <div class="pic-item pic-item-large">
+                                   <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                                   </div>
+                                   <ul class="text-news" >
+                                      <li>
+                                        <a href="#">一奇兵或成马刺取胜之匙 双塔若爆发可灭火箭</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">让7分！博彩公司看好火箭赢G6 休城逃过一劫？</a>
+                                      </li>
+                                      <li>
+                                         <a href="#">12日视频直播马刺vs火箭 休城主场迎来生死战</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">追梦赞马刺关键时刻表现 布朗揭妖刀逆生长真因</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">ESPN：马刺G6晋级希望超4成 火箭逆袭概率仅18%</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                             </li>
+                             <li>
+                                <div class="hd">
+                                   <h3><a href="#">快船</a></h3>
+                                </div>
+                                <div class="bd">
+                                   <div class="pic-item pic-item-large">
+                                   <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="220"
+                                      poster="http://video-js.zencoder.com/oceans-clip.png"
+                                      data-setup="{}">
+                                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+                                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+                                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                                   </div>
+                                  <ul class="text-news" >
+                                      <li>
+                                        <a href="#">快船即将成立附属NBDL球队 新秀告别流浪时代</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">想去快船？波神澄清：没这回事 推特账号被盗</a>
+                                      </li>
+                                      <li>
+                                         <a href="#">波神一条推特引爆媒体 他想加盟洛杉矶快船？</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">里弗斯：拆散三巨头不明智 快船需改变但非重建</a>
+                                      </li>
+                                      <li>
+                                        <a href="#">快船今夏或交易甜瓜组四巨头 雷迪克太子成筹码</a>
+                                      </li>
+                                    </ul>
+                                </div>
+                             </li>
+                          </ul>  
+                 </div>
+        </div>
+      </div>
+     </div>
+
+     
+    <!--  高清图片 -->
+    <div class="js-lazy-area ele-photo" style="height:540px;" data-lazy-loadead="yes">
+     	<div class="area area-photos">
+     		<div class="layout">
+     			        <div class="block-title">
+                      <a href="#"><img src="images/header/header24.png"></a>
+                  </div>
+                   <div class="block-body pt">
+                     <div class="control cf"></div> 
+                     <div class="photos-wraps">
+                        <div class="photos-wrap1">
+                        <img src="images/header/header25.png">
+                        </div>
+                        <div class="photos-wrap2">
+                            <img src="images/header/header26.jpg">
+                             <img src="images/header/header27.jpg" style="margin-bottom: 5px">
+                            <img src="images/header/header28.jpg">
+                        </div>
+                        <div class="photos-wrap3">
+                            <img src="images/header/header29.jpg">
+                            <img src="images/header/header30.jpg">
+                        </div>
+                     </div>
+                   </div>
+
+     		</div>
+     	</div>
+     </div>
+    
+    <!-- 通栏广告 -->
+    <div class="ad-type-a">
+    	<div class="ad-type-a-left"></div>
+    	<div class="ad-type-a-right"></div>
+    </div>
+
+    <!-- 站位 -->
+    <div style="height:40px;"></div>
+    <!-- NBA中国市场合作伙伴 -->
+    <div class="js-lazy-area" style="height:180px;" data-lazy-loadead="yes">
+     	<div class="area area-partners">
+     		<div class="layout">
+     			<h2 class="title"">NBA中国市场合作伙伴</h2>
+          <div class="bd" >
+             <img src="images/header/header18.jpg">
+             <img src="images/header/header18.jpg">
+          </div>
+     		</div>
+     	</div>
+     </div>
+
+    <!--  腾讯NBA投放客户 -->
+     <div class="js-lazy-area-client" style="height:290px;" data-lazy-loadead="yes">
+     	<div class="area area-partners">
+     		<div class="layout">
+     			<h2 class="title"">腾讯NBA投放客户</h2>
+           <div class="bd">
+            <img src="images/header/header19.png">
+          </div>
+     		</div>
+     	</div>
+     </div>
+   <!--  页脚 -->
+   <!-- NBA公共页脚 开始 -->
+    <div class="nba-footer nba-footer-wide">
+       <div class="nba-footer-links">
+           <div class="nba-footer-layout">
+              <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">球员</a></li>
+                <li><a href="#">球队</a></li>
+                <li><a href="#">赛程</a></li>
+                <li><a href="#">数据</a></li>
+                <li><a href="#">排名</a></li>
+                <li><a href="#">社区</a></li>
+                <li><a href="#">节目</a></li>
+                <li><a href="#">评论</a></li>
+                <li><a href="#">专题</a></li>
+              </ul>
+           </div>
+       </div>
+      <div class="nba-footer-main">
+          <div class="nba-footer-layout">
+             
+                 <ul class="nba-links">
+                  <!--  第一列 -->
+                   <li>
+                      <h4>关于</h4>
+                      <ul class="nba-links2">
+                           <li><a href="#" >关于腾讯NBA</a></li>
+                           <li> <a href="#">联系我们</a></li>
+                           <li><a href="#">招聘启事</a></li>
+                           <li><a href="#">实习机会</a></li>
+                           <li><a href="#">微信订阅</a></li>
+                      </ul>
+                   </li>
+                  <!--  第二例 -->
+                   <li>
+                       <h4>重大赛事</h4>
+                       <ul class="nba-links2">
+                           <li><a href="#" >2017年全明星</a></li>
+                           <li> <a href="#">2016年圣诞大战</a></li>
+                           <li><a href="#">超级企鹅篮球名人赛</a></li>
+                           <li><a href="#">2016年总决赛</a></li>
+                           <li><a href="#">2016年全明星</a></li>
+                           <li><a href="#" >2015年总决赛</a></li>
+                           <li> <a href="#">2015年全明星</a></li>
+                           <li><a href="#">2014年总决赛</a></li>
+                           <li><a href="#">2014年全明星</a></li>
+                           <li><a href="#">2013年总决赛</a></li>
+                      </ul>
+                   </li>
+                  <!--  第三列 -->
+                   <li>
+                      <h4>NBA规则</h4>
+                       <ul class="nba-links2">
+                           <li><a href="#" >24秒违例</a></li>
+                           <li> <a href="#">走步违例</a></li>
+                           <li><a href="#">回场违例</a></li>
+                           <li><a href="#">3秒违例</a></li>
+                           <li><a href="#">8秒违例</a></li>
+                           <li><a href="#" >技术犯规</a></li>
+                           <li> <a href="#">恶意犯规</a></li>
+                           <li><a href="#">个人犯规</a></li>
+                           <li><a href="#">干扰球</a></li>
+                          
+                      </ul>
+                   </li>
+                 <!--   第四列 -->
+                   <li>
+                      <h4>NBA资料</h4>
+                      <ul class="nba-links2">
+                           <li><a href="#" >关于腾讯NBA</a></li>
+                           <li> <a href="#">联系我们</a></li>
+                           <li><a href="#">招聘启事</a></li>
+                           <li><a href="#">实习机会</a></li>
+                           <li><a href="#">微信订阅</a></li>
+                           <li><a href="#" >关于腾讯NBA</a></li>
+                           <li> <a href="#">联系我们</a></li>
+                           <li><a href="#">招聘启事</a></li>
+                           <li><a href="#">实习机会</a></li>
+                          
+                      </ul>
+                   </li>
+                  <!--  第五列 -->
+                   <li>
+                      <h4>NBA记录</h4>
+                      <ul class="nba-links2">
+                           <li><a href="#" >关于腾讯NBA</a></li>
+                           <li> <a href="#">联系我们</a></li>
+                           <li><a href="#">招聘启事</a></li>
+                           <li><a href="#">实习机会</a></li>
+                           <li><a href="#">微信订阅</a></li>
+                           <li><a href="#" >关于腾讯NBA</a></li>
+                           <li> <a href="#">联系我们</a></li>
+                           <li><a href="#">招聘启事</a></li>
+                           <li><a href="#">实习机会</a></li>
+                          
+                      </ul>
+                   </li>
+                 </ul>
+            
+          </div>
+      </div>
+    </div>
+</body>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</html>

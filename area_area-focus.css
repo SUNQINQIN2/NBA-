@@ -1,0 +1,66 @@
+.area{
+	width: 100%;
+	height: 425px;
+	
+	margin-bottom: 20px;
+}
+ .area-focus .layout{
+ 	width: 1240px;
+ 	height: 425px;
+     background-color: white;
+     margin:0px auto;
+ }
+ .area-focus .slide-wrap{
+ 	width: 1240px;
+ 	height: 400px;
+ 	background-color: green;
+ }
+ .area-news >.area-cf >.col-right>.sb-block2 >.sb-block2-content{
+   width: 280px;
+   height: 582px;
+   margin-top: 20px;
+   background-color:#99E5E6;
+ }
+ 
+ /* .area-news >.area-cf >.col-right>.sb-block2 >.sb-block2-content>ul#sb-block2-tab{
+ 	width: 280px;
+ 	height: 32px;
+ 	height: 30px;
+    border-bottom: 2px solid #006bb7;
+    font-size: 0;
+ }
+  .area-news >.area-cf >.col-right>.sb-block2 >.sb-block2-content>ul#sb-block2-tab>li{
+  	display: block;
+    float: left;
+    width: 25px;
+    height: 100%;
+    font-size: 16px;
+  }
+  .area-news >.area-cf >.col-right>.sb-block2 >.sb-block2-content>ul#sb-block2-tab>li>a{
+  	display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #006bb7;
+ 
+  } */
+
+ .area-focus .paging{
+ 	width: 1240px;
+ 	height: 5px;
+ 	background-color: black;
+ 	margin-top:20px;
+ }
+
+ .left,.right{
+    width: 100px;
+    height:400px;
+    line-height:400px;
+ }
+ .item21{
+ 	width: 1240px;
+ 	height: 400px;
+ 
+ } 
+ 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap 实例 - 简单的轮播（Carousel）插件</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+*{
+	padding: 0px;
+	margin: 0px;
+}
+#d1,#d2,#d3{
+	width: 500px;
+	height: 500px;
+}
+#d{
+	width: 500px;
+	height: 500px;
+}
+#d1{
+	background-color: red;
+}
+#d2{
+	background-color: orange;
+}
+#d3{
+	background-color: yellow;
+}
+#olT >li{
+width: 50px;
+height: 30px;
+background-color: #4ACF55;
+margin-right:20px;
+}
+span>.slide-one{
+width: 50px;
+height: 30px;
+background-color: #4ACF55;
+margin-right:20px;
+display: inline-block;
+cursor: pointer;
+position: absolute;
+bottom: 2px;
+left: 30px;
+}
+span>.slide-two{
+width: 50px;
+height: 30px;
+background-color: red;
+margin-right:20px;
+display: inline-block;
+cursor: pointer;
+position: absolute;
+bottom: 2px;
+left: 60px;
+}
+</style>
+<body style="position: relative;">
+<!-- 轮播（Carousel）指标 -->
+	<div class="carousel-indicators" id="olT">
+		<!-- <li data-target="#myCarousel" data-slide-to="0" class="active"> -->
+       <!--  <input type="button" class="btn slide-one" value="Start">
+              <input type="button" class="btn slide-two" value="two"> -->
+       <div>
+       <span class="slide-one" style="width: 30px;height: 30px; background-color:red;display: inline-block;">
+            1
+       </span>
+       <span class="slide-two"  style="width: 30px;height: 30px; background-color:red;display: inline-block;">
+          2
+       </span>
+       </div>
+		<!-- </li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li> -->
+	</div>
+<div id="myCarousel1"> <!-- class="carousel slide"轮播 -->
+	
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner" id="d">
+		<div class="item active" id="d1">
+			<div class="carousel-caption" >1</div>
+		</div>
+		<div class="item" id="d2">
+			<div class="carousel-caption">2</div>
+		</div>
+		<div class="item" id="d3">
+			<div class="carousel-caption">3</div>
+		</div>
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+	<!-- <a class="carousel-control left" href="#myCarousel" 
+	   data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" 
+	   data-slide="next">&rsaquo;</a> -->
+</div> 
+<script>
+$(function(){
+        // 初始化轮播
+        $(".start-slide").click(function(){
+            $("#myCarousel").carousel('cycle');
+        });
+        // 停止轮播
+        $(".pause-slide").click(function(){
+            $("#myCarousel").carousel('pause');
+        });
+        // 循环轮播到上一个项目
+       /* $(".prev-slide").click(function(){
+            $("#myCarousel").carousel('prev');
+        });*/
+        // 循环轮播到下一个项目
+        $(".next-slide").click(function(){
+            $("#myCarousel").carousel('next');
+        });
+        // 循环轮播到某个特定的帧 
+        $(".slide-one").click(function(){
+            $("#myCarousel").carousel(0);
+        });
+        $(".slide-two").click(function(){
+            $("#myCarousel").carousel(1);
+        });
+        $(".slide-three").click(function(){
+            $("#myCarousel").carousel(2);
+        });
+        $(".slide-one").mouseenter(function(){
+            $("#myCarousel1").carousel(0);
+        });
+        $(".slide-two").mouseenter(function(){
+            $("#myCarousel1").carousel(1);
+        });
+    });
+</script>
+
+</body>
+</html>

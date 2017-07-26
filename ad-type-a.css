@@ -1,0 +1,20 @@
+.ad-type-a{
+	width: 1240px;
+	height: 90px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	background-color: pink;
+}
+.ad-type-a-left{
+	float: left;
+	width: 1000px;
+	height: 90px;
+	background-color: red;
+}
+.ad-type-a-right{
+	float: left;
+margin-left: 15px;
+width: 225px;
+height: 90px;
+background-color: green;
+}

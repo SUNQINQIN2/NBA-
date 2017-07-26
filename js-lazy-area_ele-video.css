@@ -1,0 +1,71 @@
+.ele-video{
+	width: 100%;
+	height: 418px;
+	background-color: black;
+	margin-bottom: 20px;
+} 
+.js-lazy-area .area-hotv{
+	margin-bottom: 30px;
+	width: 100%;/* 1448 */
+	height: 388px;
+	background-color: white;
+}
+.ele-video .layout{
+	width: 1240px;
+	height: 388px;
+   margin: 0 auto;
+   height: 100%;
+   background-color: white;  
+}
+.ele-video .layout .block-title{
+	width: 1240px;
+	height: 56px;
+	background-color: white;
+
+}
+.ele-video .layout .block-title #block-title-list a{
+	color: #016BB7;
+	 font-size:16px;
+}
+
+.ele-video .layout .block-title #block-title-list a:hover{
+	text-decoration: none;
+	color: red;
+}
+.ele-video .layout .block-body {
+	width: 1240px;
+	height: 330px;
+	background-color: white;
+}
+.ele-video .layout .block-body .block-body1{
+	width: 400px;
+	height: 330px;
+	background-color: #EBE7E7;
+	float: left;
+}
+.ele-video .layout .block-body .block-body1 #body1-top{
+	width: 400px;
+	height: 225px;
+	background-color: red;
+	margin-top: 30px;
+}
+.ele-video .layout .block-body .block-body1 #body1-down{
+	width: 400px;
+	height: 50px;
+	background-color: yellow;
+	margin-top: 25px;
+}
+.ele-video .layout .block-body .block-body2{
+	width: 840px;
+	height: 330px;
+	background-color: white;
+	float: left;
+}
+.ele-video .layout .block-body .block-body2 .pic-item{
+	width: 240px;
+	height: 135px;
+	background-color: yellow;
+	margin-top: 30px;
+	margin-left: 40px;
+	float: left;
+}

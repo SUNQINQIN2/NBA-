@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NBA中文网首页2</title>
+</head>
+    
+	
+
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index2.css">
+<script src="jquery-3.1.1.js" ></script>
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+   
+      $(document).ready(function(){ 
+      $('#myCarousel').carousel({interval:2000});//每隔5秒自动轮播 
+      }); 
+     
+	function show(e){
+		
+      var s=e.getElementsByTagName('UL')[0];
+    	  var s2=s.getElementsByTagName("LI");
+    	  for(var i=0;i<s2.length;i++){
+    	  	
+    	  	s2[i].style.display="block";
+    	  } 
+       
+	}
+	 function Out(e) {
+    	var s=e.getElementsByTagName('UL')[0];
+    	  var s2=s.getElementsByTagName("LI");
+    	  for(var i=0;i<s2.length;i++){
+    	  	s2[i].style.display="none";
+    	  }
+    	  
+    }
+</script>
+<body>
+	<div class="nba-container-wrapper">
+	<div class="header">
+		<div class="wrap header-main">
+			<div class="header-logo">
+				<a href="http://china.nba.com"><img src="images/nba-logo1.jpg" alt="nba-logo1"></a>
+			</div>
+			<div class="header-wrap">
+				<div class="wrap-up">
+					<ul class="wrap-up-ul1">
+						<li><a href="#">jr.nba</a></li>
+						<li><a href="#">NBA APP</a></li>
+						<li><a href="#">天天NBA</a></li>
+						<li id="last_li" onMouseOver="show(this)" onMouseOut="Out(this)">
+							<a href="#">NBAstore</a>
+
+							<ul style="position:relative;z-index:2">
+								<li><a href="#">球衣</a></li>
+								<li><a href="#">球裤</a></li>
+								<li><a href="#">T恤</a></li>
+								<li><a href="#">球鞋</a></li>
+								<li><a href="#">科比专区</a></li>
+								<li><a href="#">库里专区</a></li>
+								<li><a href="#">乔丹专区</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="wrap-down">
+					<a href="#"><img src="images/link-title.jpg"></a>
+					<a href="#" style="margin-right: 10px;">NBA.com/China</a>
+					<span id="a_l"></span>
+					<a href="#">NBA.com</a>
+				</div>
+			</div>
+			<div class="header-side">
+				<div class="side-user"><a href="#">登陆</a></div>
+			<div class="side-search">
+				<span><input type="text" placeholder="搜全文"></span>
+				<span><img src="images/search.png"></span>
+			</div>
+			</div>
+		</div>
+		<div class="header-nav">
+			<ul class="header-nav-ul">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">新闻</a></li>
+				<li id="li-ul-bteam"><a href="#">球队</a></li>
+				<li id="li-ul-bplayer" onMouseOver="show(this)" onMouseOut="Out(this)">
+					<a href="#">球员</a>
+					<ul style="position:relative;z-index:2">
+						<li style="width:106px"><a href="#">现役球员</a></li>
+						<li style="width:106px"><a href="#">退役球员</a></li>
+					</ul>
+				</li>
+				<li id="li-ul-bgame" onMouseOver="show(this)" onMouseOut="Out(this)">
+					<a href="#">赛程</a>
+					<ul style="position:relative;z-index:2">
+						<li style="width:192px"><a href="#">赛程</a></li>
+						<li style="width:192px"><a href="#">季后赛对阵</a></li>
+						<li style="width:192px"><a href="#">2016-17赛季重要日期</a></li>
+					</ul>
+				</li>
+				<li><a href="#">比分</a></li>
+				<li id="li-ul-branking" onMouseOver="show(this)" onMouseOut="Out(this)">
+					<a href="#">排名</a>
+					<ul style="position:relative;z-index:2">
+						<li><a href="#">联盟排名</a></li>
+					</ul>
+				</li>
+				<li id="li-ul-bwork" onMouseOver="show(this)" onMouseOut="Out(this)">
+					<a href="#">统计</a>
+					<ul style="position:relative;z-index:2">
+						<li style="width:130px"><a href="#">球员数据</a></li>
+						<li style="width:130px"><a href="#">球队数据</a></li>
+						<li style="width:130px"><a href="#">高级球队数据</a></li>
+						<li style="width:130px"><a href="#">联盟数据王</a></li>
+					</ul>
+				</li>
+				<li><a href="#">图片</a></li>
+				<li><a href="#">犯规手册</a></li>
+				<li><a href="#">密探</a></li>
+				<li id="li-ul-bmore" onMouseOver="show(this)" onMouseOut="Out(this)">
+					<a href="#">更多</a>
+					<ul style="position:relative;z-index:2">
+						<li style="width:130px"><a href="#">转播商</a></li>
+						<li style="width:130px"><a href="#">NBA历史</a></li>
+						<li style="width:130px"><a href="#">NBA50大明星</a></li>
+						<li style="width:130px"><a href="#">NBA扣响盛夏</a></li>
+						<li style="width:130px"><a href="#">NBA知识Q&A</a></li>
+						<li style="width:130px"><a href="#">国际赛</a></li>
+						<li style="width:130px"><a href="#">全明星赛</a></li>
+						<li style="width:130px"><a href="#">2016NBA选秀</a></li>
+						<li style="width:130px"><a href="#">NBA乐园</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="main-content-box">
+            <div class="main-content">
+            	<div class="main">
+            	<div class="sched"></div>
+            	<div class="site-banner"></div>
+            	<div class="section"></div>
+            	</div>
+            </div>
+            <div class="footer"></div>
+
+    </div> 
+</div>
+</body>
+</html>
